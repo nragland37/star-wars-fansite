@@ -1,0 +1,745 @@
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bolder;
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+h3,h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 5px; 
+}
+
+#section {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 150px;
+  padding-top: 5px;  
+  background-color: #FFFFFF; 
+  overflow: auto;
+}
+
+/*Title backgrounds*/
+div.header-img {
+  background-image: url("images/home_background.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  color: #ffffff;  
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*Title backgrounds*/
+div.content {
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: #222931;
+  color: #FFFFFF;
+  background-color: #000000;
+  opacity: 0.88;
+  page-break-after: always;
+}
+
+div.info {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  letter-spacing: 3px;
+  color: #FFFFFF;
+  text-align: center;
+  display: block;
+}	
+
+.center {
+  text-align: center;
+}
+
+.long_time_ago_img {
+  display: block;
+  padding-left: 150px;
+  padding-right:0;
+  padding-top: 10px;
+  padding-bottom: 0;
+  height: 80px;
+  width: 420px;
+}
+
+body { 
+  background-image: url("images/star_wars_hyperspace_travel.png");
+  background-repeat: no-repeat;
+  background-size: 90% 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-color: #000000;
+  margin: 0 auto;
+  
+}
+
+address { 
+  display: block;
+  font-style: italic;
+  overflow: auto;
+  text-align: center;
+}
+
+form {
+  font-family: 'Open Sans', sans-serif;
+  display: block;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+fieldset {
+  display: block;
+  line-height: 1.8em;
+  margin-inline-start: 5px;
+  margin-inline-end: 5px;
+  min-inline-size: min-content;
+  border-width: 2px;
+  border-style: groove;
+  border-color: #222931;
+  border-image: initial;
+  margin-bottom: 25px;
+  margin-top: 30px;
+}
+
+legend {
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  border-image: initial;
+  font-weight: bold;
+  text-align: center;
+}
+
+label {
+  float: left;
+  clear: left;
+  width: 16.50em;
+  line-height: 1.8em;
+  margin-inline-start: 5px;
+  margin-inline-end: 5px;
+  padding-inline-start: 12em;
+  min-inline-size: min-content;
+}
+
+audio {
+  padding-left: 100px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+/*Start: Table*/
+table {
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+th {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size:20px;
+}
+
+td {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+}
+
+td, th {
+  border: 1px solid #999;
+  padding: .1em 1em;
+  text-align: center;
+}
+
+tr:nth-child(odd) {
+  color:#ffffff;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2; 
+  color:#000000;
+}
+
+/*Start: Table*/
+
+/*Start: Image Grid*/
+.row {
+  display: -ms-flexbox; 
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+  padding: 0 70px;
+}
+
+.column {
+  -ms-flex: 25%;
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 5px;
+  box-sizing: border-box;
+}
+
+.column img {
+  margin-top: 10px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {
+  opacity: 0.70;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 800px;
+}
+
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+.modal-content,
+#caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0)
+  }
+  to {
+    transform: scale(1)
+  }
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
+/*End: image Grid*/
+
+/*Start: Footer/Social Links*/
+#ul-social {
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+  overflow: auto;
+  background-color: #FFFFFF;
+}
+
+#li-social {
+  font-size: 30px;
+  float: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding-top: 20px;
+}
+
+.fa {
+  padding: 20px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa-facebook {
+  color: #3B5998;
+}
+
+.fa-facebook:hover {
+  background: #3B5998;
+  color: #FFFFFF;
+  font-weight: none;
+  color: #FFFFFF;
+  right: 0;
+  text-decoration: none;
+}
+
+.fa-facebook:after {
+  border-radius: none;
+  border-top: none;
+  content: "";
+  position: none;
+  right: none;
+  bottom: none;
+  left: none;
+  transition: none;
+}
+
+.fa-twitter {
+  color: #55ACEE;
+}
+
+.fa-twitter:hover {
+  background: #55ACEE;
+  color: #FFFFFF;
+  font-weight: none;
+  color: #FFFFFF;
+  right: 0;
+  text-decoration: none;
+}
+
+.fa-twitter:after {
+  border-radius: none;
+  border-top: none;
+  content: "";
+  position: none;
+  right: none;
+  bottom: none;
+  left: none;
+  transition: none;
+}
+
+.fa-instagram {
+  color: #125688;
+}
+
+.fa-instagram:hover {
+  background: #125688;
+  color: #FFFFFF;
+  font-weight: none;
+  color: #FFFFFF;
+  right: 0;
+  text-decoration: none;
+}
+
+.fa-instagram:after {
+  border-radius: none;
+  border-top: none;
+  content: "";
+  position: none;
+  right: none;
+  bottom: none;
+  left: none;
+  transition: none;
+}
+
+.fa-youtube {
+  color: #bb0000;
+}
+
+.fa-youtube:hover {
+  background: #bb0000;
+  color: #FFFFFF;
+  font-weight: none;
+  color: #FFFFFF;
+  right: 0;
+  text-decoration: none;
+}
+
+.fa-youtube:after {
+  border-radius: none;
+  border-top: none;
+  content: "";
+  position: none;
+  right: none;
+  bottom: none;
+  left: none;
+  transition: none;
+}
+
+footer {
+  bottom: 0;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 250px;
+  background-color: #FFFFFF; 
+  color: #0D0D0D;
+  font-weight: bold;
+  overflow: auto;
+  text-align: center;
+}
+
+div.footer-space {
+  letter-spacing: 3px;
+}
+/*End: Footer/Social Links*/
+
+/*Start: Navigation/Anchors*/
+.header_left_img {
+  float: left;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 100px;
+  margin-right: 0;
+  height: 69px;
+  width: 164px;
+}
+
+
+ul {
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 30px;
+  padding-right: 125px;
+  overflow: hidden;
+  background-color: #FFFFFF;
+}
+
+li {
+  font-size: 17px;
+  float: right;
+  margin-top: 10px;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+li a, #dropbtn-about {
+  display: inline-block;
+  color: #0D0D0D;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a, #dropbtn-prequel {
+  display: inline-block;
+  color: #0D0D0D;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a, #dropbtn-original {
+  display: inline-block;
+  color: #0D0D0D;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #0D0D0D;
+  color: #FFFFFF;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #FFFFFF;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+a {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 3px;
+  font-weight: bold;
+  color: #0D0D0D;
+  position: relative;
+  text-decoration:none;
+  transition: color 1s ease-out;
+}
+
+#content-a {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  color: #FFFFFF;
+  position: relative;
+  text-decoration:none;
+  transition: color 1s ease-out;  
+}
+
+#footer-b {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  color: #FFFFFF;
+  position: relative;
+  text-decoration:none;
+  transition: color 1s ease-out;
+}  
+
+a:hover {
+  color: #0D0D0D;
+  right: 0;
+  text-decoration: none;
+}
+
+a:hover:after {
+  border-color: #0D0D0D;
+  right: 0;
+}
+
+.blue-a:hover {
+  border-color: #1765da;
+  right: 0;
+  text-decoration: none;
+}
+
+.blue-a:hover:after {
+  border-color: #1765da;
+  right: 0;
+}
+
+.green-a:hover {
+  border-color: #5fc44a;
+  right: 0;
+  text-decoration: none;
+}
+
+.green-a:hover:after {
+  border-color: #5fc44a;
+  right: 0;
+}
+
+.red-a:hover {
+  border-color: #c52524;
+  right: 0;
+  text-decoration: none;
+}
+
+.red-a:hover:after {
+  border-color: #c52524;
+  right: 0;
+}
+
+.purple-a:hover {
+  border-color: #8f35bb;
+  right: 0;
+  text-decoration: none;
+}
+
+.purple-a:hover:after {
+  border-color: #8f35bb;
+  right: 0;
+}
+
+#content-a:hover:after {
+  border-color: #f7c532;
+  right: 0;
+}
+
+.footer-a:hover:after {
+  border-color: #0D0D0D;
+  right: 0;
+}
+
+#footer-b:hover:after {
+  border-color: #FFFFFF;
+  right: 0;
+}
+
+a:after {
+  border-radius: 1em;
+  border-top: .2em solid #FFFFFF;
+  content: "";
+  position: absolute;
+  right: 100%;
+  bottom: .35em;
+  left: 0;
+  transition: right 1.5s cubic-bezier(0,.15,0,1),
+              border-color .5s ease-out;
+}
+
+#content-a:after {
+  border-radius: 1em;
+  border-top: .2em solid #F2F2F2;
+  content: "";
+  position: absolute;
+  right: 100%;
+  bottom: -.2em;
+  left: 0;
+  transition: right 1.5s cubic-bezier(0,.15,0,1),
+              border-color .5s ease-out;
+}
+
+.footer-a:after {
+  border-radius: 1em;
+  border-top: .2em solid #FFFFFF;
+  content: "";
+  position: absolute;
+  right: 100%;
+  bottom: -.2em;
+  left: 0;
+  transition: right 1.5s cubic-bezier(0,.15,0,1),
+              border-color .5s ease-out;
+}
+
+#footer-b:after {
+  border-radius: 1em;
+  border-top: .2em solid #FFFFFF;
+  content: "";
+  position: absolute;
+  right: 100%;
+  bottom: -.2em;
+  left: 0;
+  transition: right 1.5s cubic-bezier(0,.15,0,1),
+              border-color .5s ease-out;
+}
+
+a:hover:after {
+  right: 0;
+}
+/*End: Navigation/Anchors*/
+
+/*Start: Star Wars Crawl*/
+.fade {
+  position: relative;
+  width: 100%;
+  min-height: 30vh;
+  top: -20px;
+  background-image: linear-gradient(0deg, transparent, black 75%);
+  z-index: 1;
+}
+
+.star-wars {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 900px;
+  color: #f7c532;
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 500%;
+  font-weight: 600;
+  letter-spacing: 6px;
+  line-height: 150%;
+  perspective: 400px;
+  text-align: justify;
+}
+
+.crawl {
+  position: relative;
+  top: 9999px;
+  transform-origin: 50% 100%;
+  animation: crawl 60s linear;
+}
+
+.crawl > .title {
+  font-size: 90%;
+  text-align: center;
+}
+
+.crawl > .title h1 {
+  margin: 0 0 100px;
+  text-transform: uppercase;
+}
+
+@keyframes crawl {
+  0% {
+    top: 0;
+    transform: rotateX(20deg)  translateZ(0);
+  }
+  100% { 
+    top: -6000px;
+    transform: rotateX(25deg) translateZ(-2500px);
+  }
+}
+/*End: Star Wars Crawl*/

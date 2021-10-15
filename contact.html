@@ -1,0 +1,211 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Contact</title>
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300;400;500;700&display=swap">
+  <link rel="stylesheet" type="text/css" href="inc/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+.space {
+  float: left;
+  clear: left;
+  width: 35em;
+}
+
+.space_message {
+  float: left;
+  clear: left;
+  width: 12.25em;
+}
+
+.space_light_dark {
+  float: left;
+  clear: left;
+  width: 12em;
+}
+
+#section {
+  opacity: 0.95;
+}
+
+h1 {
+  font-size: 55px;
+  letter-spacing: 5px;
+}
+
+div.header-img {
+  background-image: url("img/boba_fett.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  color: #ffffff;  
+  text-align: center;
+  height: 75vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+</style>
+</head>
+
+<body>  
+
+<a id="top"></a>
+  
+<div>
+  <ul>
+    <a href="home.html"><img class="header_left_img" title="Star Wars Logo" src="img/star_wars_logo.png" alt="Star Wars Logo"></a>
+    <div class="li">
+	  <li class="dropdown">
+	  <a class="blue-a" href="about.html" id="dropbtn-about">ABOUT</a>
+	  <div class="dropdown-content">
+        <a class="purple-a" href="contact.html">CONTACT</a>
+      </div>
+	  </li>
+      <li><a class="green-a" href="artwork.html">ARTWORK</a></li>
+	  <li class="dropdown">
+        <a class="red-a" href="prequel_trilogy.html" id="dropbtn-prequel">PREQUEL TRILOGY</a>
+      <div class="dropdown-content">
+        <a class="green-a" href="the_phantom_menace.html">Episode I: The Phantom Menace</a>
+        <a class="purple-a" href="attack_of_the_clones.html">Episode II: Attack of the Clones</a>
+        <a class="blue-a" href="revenge_of_the_sith.html">Episode III: Revenge of the Sith</a>
+      </div>
+	  </li>
+	  <li class="dropdown">
+        <a class="purple-a" href="orginal_trilogy.html" id="dropbtn-original">ORIGINAL TRILOGY</a>
+      <div class="dropdown-content">
+        <a class="red-a" href="a_new_hope.html">Episode IV: A New Hope</a>
+        <a class="blue-a" href="the_empire_strikes_back.html">Episode V: The Empire Strikes Back</a>
+        <a class="green-a" href="return_of_the_jedi.html">Episode VI: Return of the Jedi</a>
+      </div>
+	  </li>
+	  <li><a class="blue-a" href="george_lucas.html">GEORGE LUCAS</a></li>
+	</div>
+  </ul>
+</div>
+
+
+<div id="page-container">
+
+<div class="header-img">
+  <h1>CONTACT ME</h1>
+</div>
+
+<section id="section">
+  <div id="content-wrap">
+    <div class="content">
+	
+      <form method="post" action="mailto:nragland37@gmail.com">
+	
+
+	  <fieldset>
+	  <legend>Contact info</legend>
+		<div>
+		  <label for="name">Full Name: </label>
+		  <input name="name" id="name" value placeholder="E.g., Luke Skywalker">
+		</div>
+		<div>
+		  <label for="email">Email address: </label>
+		  <input name="email" id="email" value placeholder="E.g., darthvader@email.com">
+		</div>
+	  </fieldset>
+	  
+	  <fieldset>
+	  <legend>What are your Favorite Films?</legend>
+		<div>
+		  <label class="space" for="a-new-hope">Episode IV: A New Hope (1977)</label>
+		  <input type="checkbox" name="a-new-hope" id="a-new-hope" value="a-new-hope">
+		</div>
+		<div>
+		  <label class="space" for="the-empire-strikes-back">Episode V: The Empire Strikes Back (1980)</label>
+		  <input type="checkbox" name="the-empire-strikes-back" id="the-empire-strikes-back" value="the-empire-strikes-back">
+		</div>
+		<div>
+		  <label class="space" for="the-return-of-the-jedi">Episode VI: The Return of the Jedi (1983)</label>
+		  <input type="checkbox" name="the-return-of-the-jedi" id="the-return-of-the-jedi" value="the-return-of-the-jedi">
+		</div>
+		<div>
+		  <label class="space" for="the-phantom-menace">Episode I: The Phantom Menace (1999)</label>
+		  <input type="checkbox" name="the-phantom-menace" id="the-phantom-menace" value="the-phantom-menace">
+		</div>
+		<div>
+		  <label class="space" for="attack-of-the-clones">Episode II: Attack of the Clones (2002)</label>
+		  <input type="checkbox" name="attack-of-the-clones" id="attack-of-the-clones" value="attack-of-the-clones">
+	    </div>
+		<div>
+		  <label class="space" for="revenge-of-the-sith">Episode III: Revenge of the Sith (2005)</label>
+		  <input type="checkbox" name="revenge-of-the-sith" id="revenge-of-the-sith" value="revenge-of-the-sith">
+	    </div>
+	  </fieldset>
+	  
+	  <fieldset>
+	  	  <legend>Light Side or Dark Side?</legend>
+		<div>
+		  <label class="space_light_dark" for="light-side">Light Side </label>
+		  <input type="checkbox" name="light-side" id="light-side" value="light-side">
+		</div>
+		<div>
+		  <label class="space_light_dark" for="dark-side">Dark Side</label>
+		  <input type="checkbox" name="dark-side" id="dark-side" value="dark-side">
+		</div>
+	  </fieldset>
+	  
+	  <fieldset>
+	  <legend>Have Questions/Comments?</legend>
+	    <div>
+		  <label class="space_message" for="message">Message: </label>
+	      <textarea rows="10" cols="40" name="message" id="message"></textarea>
+		</div>
+	  </fieldset>
+	  
+	  <div class="center">
+          <input type="submit" value="Submit"/>
+      </div> 
+	  
+	  <div>
+		  <input type="reset" value="Reset form">
+	  </div>
+	  
+      <div>
+	      <h2 class="center">May the Force be With You</h2>
+	  </div>
+	  
+	  <address>
+		  <p>E-mail me directly: <a id="content-a" href="mailto:nragland37@gmail.com">nragland37@gmail.com</a><br>
+			 "No. Try not. Do... or do not. There is no try."</p> 
+	  </address>
+	  
+	  </form>
+    </div><!--end div.content -->
+  </div><!--end #content-wrap -->
+</section><!--end #section -->
+
+<footer>
+  <ul id="ul-social">
+    <li id="li-social">
+	  <a class="fa fa-facebook" href="https://www.facebook.com/StarWars" target="_blank" title="facebook"></a>
+	  <a class="fa fa-instagram" href="https://www.instagram.com/starwars/" target="_blank" title="instagram"></a>
+	  <a class="fa fa-twitter" href="https://twitter.com/starwars" target="_blank" title="twitter"></a>
+	  <a class="fa fa-youtube" href="https://www.youtube.com/user/starwars" target="_blank" title="youtube"></a>
+    </li>
+  </ul>
+  <div class="footer-space">
+  <p>Created by Nicholas Ragland<br/>
+	  © 2021 <a class="footer-a" href="https://www.webster.edu/" target="_blank">Webster University</a></p>
+  <p><a class="footer-a" href="#top">Back To Top</a></p>
+  </div>
+</footer>
+  
+</div><!--end #page-container -->
+</body>
+</html>
