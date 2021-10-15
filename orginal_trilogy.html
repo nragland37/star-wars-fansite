@@ -1,233 +1,251 @@
 <!DOCTYPE HTML>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <title>Orginal Trilogy</title>
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300;400;500;700&display=swap">
+  <link rel="stylesheet" type="text/css"
+    href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300;400;500;700&display=swap">
   <link rel="stylesheet" type="text/css" href="inc/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
+  <style>
+    h1 {
+      font-size: 55px;
+      letter-spacing: 5px;
+    }
 
-h1 {
-  font-size: 55px;
-  letter-spacing: 5px;
-}
+    p {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 16px;
+    }
 
-p {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-}
+    .h3 {
+      font-size: 30px;
+      letter-spacing: 5px;
+    }
 
-.h3 {
-  font-size: 30px;
-  letter-spacing: 5px;
-}
+    div.header-img {
+      background-image: url("img/millenium_falcon.jpeg");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      position: relative;
+      color: #ffffff;
+      text-align: center;
+      height: 75vh;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
-div.header-img {
-  background-image: url("img/millenium_falcon.jpeg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  position: relative;
-  color: #ffffff;  
-  text-align: center;
-  height: 75vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+    div.content {
+      width: 95%;
+    }
 
-div.content {
-  width: 95%;
-}
+    #section {
+      opacity: 0.90;
+    }
 
-#section {
-  opacity: 0.90;
-}
+    .odd-a {
+      font-family: 'Roboto', sans-serif;
+      letter-spacing: 0;
+      font-weight: bold;
+      color: #0D0D0D;
+      position: relative;
+      text-decoration: none;
+      transition: color 1s ease-out;
+    }
 
-.odd-a {
-  font-family: 'Roboto', sans-serif;
-  letter-spacing: 0;
-  font-weight: bold;
-  color: #0D0D0D;
-  position: relative;
-  text-decoration:none;
-  transition: color 1s ease-out;
-}
+    .odd-a:hover {
+      color: #f7c532;
+      right: 0;
+      text-decoration: none;
+    }
 
-.odd-a:hover {
-  color: #f7c532;
-  right: 0;
-  text-decoration: none;
-}
+    .odd-a:after {
+      border-radius: none;
+      border-top: none;
+      content: "";
+      position: absolute;
+      right: none;
+      bottom: none;
+      left: 0;
+      transition: none;
+    }
 
-.odd-a:after {
-  border-radius: none;
-  border-top: none;
-  content: "";
-  position: absolute;
-  right: none;
-  bottom: none;
-  left: 0;
-  transition: none;
-}
+    .even-a {
+      font-family: 'Roboto', sans-serif;
+      letter-spacing: 0;
+      font-weight: bold;
+      color: #ffffff;
+      position: relative;
+      text-decoration: none;
+      transition: color 1s ease-out;
+    }
 
-.even-a {
-  font-family: 'Roboto', sans-serif;
-  letter-spacing: 0;
-  font-weight: bold;
-  color: #ffffff;
-  position: relative;
-  text-decoration:none;
-  transition: color 1s ease-out;
-}
+    .even-a:hover {
+      color: #f7c532;
+      right: 0;
+      text-decoration: none;
+    }
 
-.even-a:hover {
-  color: #f7c532;
-  right: 0;
-  text-decoration: none;
-}
+    .even-a:after {
+      border-radius: none;
+      border-top: none;
+      content: "";
+      position: absolute;
+      right: none;
+      bottom: none;
+      left: 0;
+      transition: none;
+    }
 
-.even-a:after {
-  border-radius: none;
-  border-top: none;
-  content: "";
-  position: absolute;
-  right: none;
-  bottom: none;
-  left: 0;
-  transition: none;
-}
+    .vid-space {
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 25px;
+      padding-bottom: 25px;
+      width: 30%;
+      height: 325px;
+    }
 
-.vid-space {
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  width: 30%;
-  height: 325px;
-}
-
-.center {
-  align-content: center;
-}
-
-</style>
+    .center {
+      align-content: center;
+    }
+  </style>
 </head>
 
-<body>  
+<body>
 
-<a id="top"></a>
+  <a id="top"></a>
 
-<div>
-  <ul>
-  <a href="index.html"><img class="header_left_img" title="Star Wars Logo" src="img/star_wars_logo.png" alt="Star Wars Logo"></a>
-	<li><a class="purple-a" href="contact.html">CONTACT</a></li>
-    <li><a class="blue-a" href="about.html">ABOUT</a></li>
-	<li><a class="green-a" href="artwork.html">ARTWORK</a></li>
-	<li class="dropdown">
-		<a class="red-a" href="prequel_trilogy.html" id="dropbtn-prequel">PREQUEL TRILOGY</a>
-	  <div class="dropdown-content">
-		<a class="green-a" href="the_phantom_menace.html">Episode I: The Phantom Menace</a>
-		<a class="purple-a" href="attack_of_the_clones.html">Episode II: Attack of the Clones</a>
-		<a class="blue-a" href="revenge_of_the_sith.html">Episode III: Revenge of the Sith</a>
-	  </div>
-	  </li>
-	  <li class="dropdown">
-		<a class="purple-a" href="orginal_trilogy.html" id="dropbtn-original">ORIGINAL TRILOGY</a>
-	  <div class="dropdown-content">
-		<a class="red-a" href="a_new_hope.html">Episode IV: A New Hope</a>
-		<a class="blue-a" href="the_empire_strikes_back.html">Episode V: The Empire Strikes Back</a>
-		<a class="green-a" href="return_of_the_jedi.html">Episode VI: Return of the Jedi</a>
-	  </div>
-	  </li>
-	  <li><a class="blue-a" href="george_lucas.html">GEORGE LUCAS</a></li>
-  </ul>
-</div>
-
-<div id="page-container">
-  
-<div class="header-img">
-  <h1>ORIGINAL TRILOGY</h1>
-</div> 
-
-<section id="section">
-  <div id="content-wrap">
-    <div class="content">	
-	<table>
-	  <tbody>
-		<tr>
-		  <th>Title</th>
-		  <th>Year</th>
-		  <th>Release Date</th>
-		  <th>Rating</th>
-		  <th>Runtime</th>
-		  <th>IMDB Score</th>
-		  <th>Director</th>
-		  <th>Writer</th>
-		  <th>Main Stars</th>
-		</tr>
-		<tr>
-		  <th><a class="odd-a" href="https://www.imdb.com/title/tt0076759/" target="_blank">Star Wars: Episode IV - A New Hope</a></th>
-		  <td>1977</td>
-		  <td>May 25th</td>
-		  <td>PG</td>
-		  <td>2h 1min</td>
-		  <td>8.6/10</td>
-		  <td>George Lucas</td>
-		  <td>George Lucas</td>
-		  <td>Mark Hamill, Harrison Ford, Carrie Fisher</td>
-		</tr>
-		<tr>
-		  <th><a class="even-a" href="https://www.imdb.com/title/tt0080684/" target="_blank">Star Wars: Episode V - The Empire Strikes Back</a></th>
-		  <td>1980</td>
-		  <td>June 20th</td>
-		  <td>PG</td>
-		  <td>2h 4min</td>
-		  <td>8.7/10</td>
-		  <td>Irvin Kershner</td>
-		  <td>George Lucas</td>
-		  <td>Mark Hamill, Harrison Ford, Carrie Fisher</td>
-		</tr>
-		<tr>
-		  <th><a class="odd-a" href="https://www.imdb.com/title/tt0086190/" target="_blank">Star Wars: Episode VI - Return of the Jedi</a></th>
-		  <td>1983</td>
-		  <td>May 25th</td>
-		  <td>PG</td>
-		  <td>2hr 11min</td>
-		  <td>8.3/10</td>
-		  <td>Richard Marquand</td>
-		  <td>George Lucas</td>
-		  <td>Mark Hamill, Harrison Ford, Carrie Fisher</td>
-		</tr>
-	  </tbody>
-	</table>  
-    </div><!--end div.content -->
-    <div class="center">
-	  <iframe class="vid-space" src="https://www.youtube.com/embed/vZ734NWnAHA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	  <iframe class="vid-space" src="https://www.youtube.com/embed/JNwNXF9Y6kY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <iframe class="vid-space" src="https://www.youtube.com/embed/XgB4gaY2dWE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-  </div><!--end #content-wrap -->
-</section><!--end #section -->
-
-<footer>
-  <ul id="ul-social">
-    <li id="li-social">
-	  <a class="fa fa-facebook" href="https://www.facebook.com/StarWars" target="_blank" title="facebook"></a>
-	  <a class="fa fa-instagram" href="https://www.instagram.com/starwars/" target="_blank" title="instagram"></a>
-	  <a class="fa fa-twitter" href="https://twitter.com/starwars" target="_blank" title="twitter"></a>
-	  <a class="fa fa-youtube" href="https://www.youtube.com/user/starwars" target="_blank" title="youtube"></a>
-    </li>
-  </ul>
-  <div class="footer-space">
-  <p>Created by Nicholas Ragland<br/>
-	  © 2021 <a class="footer-a" href="https://www.webster.edu/" target="_blank">Webster University</a></p>
-  <p><a class="footer-a" href="#top">Back To Top</a></p>
+  <div>
+    <ul>
+      <a href="index.html"><img class="header_left_img" title="Star Wars Logo" src="img/star_wars_logo.png"
+          alt="Star Wars Logo"></a>
+      <li><a class="purple-a" href="contact.html">CONTACT</a></li>
+      <li><a class="blue-a" href="about.html">ABOUT</a></li>
+      <li><a class="green-a" href="artwork.html">ARTWORK</a></li>
+      <li class="dropdown">
+        <a class="red-a" href="prequel_trilogy.html" id="dropbtn-prequel">PREQUEL TRILOGY</a>
+        <div class="dropdown-content">
+          <a class="green-a" href="the_phantom_menace.html">Episode I: The Phantom Menace</a>
+          <a class="purple-a" href="attack_of_the_clones.html">Episode II: Attack of the Clones</a>
+          <a class="blue-a" href="revenge_of_the_sith.html">Episode III: Revenge of the Sith</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a class="purple-a" href="orginal_trilogy.html" id="dropbtn-original">ORIGINAL TRILOGY</a>
+        <div class="dropdown-content">
+          <a class="red-a" href="a_new_hope.html">Episode IV: A New Hope</a>
+          <a class="blue-a" href="the_empire_strikes_back.html">Episode V: The Empire Strikes Back</a>
+          <a class="green-a" href="return_of_the_jedi.html">Episode VI: Return of the Jedi</a>
+        </div>
+      </li>
+      <li><a class="blue-a" href="george_lucas.html">GEORGE LUCAS</a></li>
+    </ul>
   </div>
-</footer>
-  
-</div><!--end #page-container -->
+
+  <div id="page-container">
+
+    <div class="header-img">
+      <h1>ORIGINAL TRILOGY</h1>
+    </div>
+
+    <section id="section">
+      <div id="content-wrap">
+        <div class="content">
+          <table>
+            <tbody>
+              <tr>
+                <th>Title</th>
+                <th>Year</th>
+                <th>Release Date</th>
+                <th>Rating</th>
+                <th>Runtime</th>
+                <th>IMDB Score</th>
+                <th>Director</th>
+                <th>Writer</th>
+                <th>Main Stars</th>
+              </tr>
+              <tr>
+                <th><a class="odd-a" href="https://www.imdb.com/title/tt0076759/" target="_blank">Star Wars: Episode IV
+                    - A New Hope</a></th>
+                <td>1977</td>
+                <td>May 25th</td>
+                <td>PG</td>
+                <td>2h 1min</td>
+                <td>8.6/10</td>
+                <td>George Lucas</td>
+                <td>George Lucas</td>
+                <td>Mark Hamill, Harrison Ford, Carrie Fisher</td>
+              </tr>
+              <tr>
+                <th><a class="even-a" href="https://www.imdb.com/title/tt0080684/" target="_blank">Star Wars: Episode V
+                    - The Empire Strikes Back</a></th>
+                <td>1980</td>
+                <td>June 20th</td>
+                <td>PG</td>
+                <td>2h 4min</td>
+                <td>8.7/10</td>
+                <td>Irvin Kershner</td>
+                <td>George Lucas</td>
+                <td>Mark Hamill, Harrison Ford, Carrie Fisher</td>
+              </tr>
+              <tr>
+                <th><a class="odd-a" href="https://www.imdb.com/title/tt0086190/" target="_blank">Star Wars: Episode VI
+                    - Return of the Jedi</a></th>
+                <td>1983</td>
+                <td>May 25th</td>
+                <td>PG</td>
+                <td>2hr 11min</td>
+                <td>8.3/10</td>
+                <td>Richard Marquand</td>
+                <td>George Lucas</td>
+                <td>Mark Hamill, Harrison Ford, Carrie Fisher</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!--end div.content -->
+        <div class="center">
+          <iframe class="vid-space" src="https://www.youtube.com/embed/vZ734NWnAHA" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+          <iframe class="vid-space" src="https://www.youtube.com/embed/JNwNXF9Y6kY" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+          <iframe class="vid-space" src="https://www.youtube.com/embed/XgB4gaY2dWE" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+      <!--end #content-wrap -->
+    </section>
+    <!--end #section -->
+
+    <footer>
+      <ul id="ul-social">
+        <li id="li-social">
+          <a class="fa fa-facebook" href="https://www.facebook.com/StarWars" target="_blank" title="facebook"></a>
+          <a class="fa fa-instagram" href="https://www.instagram.com/starwars/" target="_blank" title="instagram"></a>
+          <a class="fa fa-twitter" href="https://twitter.com/starwars" target="_blank" title="twitter"></a>
+          <a class="fa fa-youtube" href="https://www.youtube.com/user/starwars" target="_blank" title="youtube"></a>
+        </li>
+      </ul>
+      <div class="footer-space">
+        <p>Created by Nicholas Ragland<br />
+          © 2021 <a class="footer-a" href="https://www.webster.edu/" target="_blank">Webster University</a></p>
+        <p><a class="footer-a" href="#top">Back To Top</a></p>
+      </div>
+    </footer>
+
+  </div>
+  <!--end #page-container -->
 </body>
+
 </html>
