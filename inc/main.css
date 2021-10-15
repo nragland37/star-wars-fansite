@@ -458,7 +458,7 @@ div.footer-space {
   float: left;
   margin-top: 0;
   margin-bottom: 0;
-  margin-left: 100px;
+  margin-left: 75px;
   margin-right: 0;
   height: 69px;
   width: 164px;
@@ -472,7 +472,7 @@ ul {
   margin-left: 0;
   margin-right: 0;
   padding: 30px;
-  padding-right: 125px;
+  padding-right: 100px;
   overflow: hidden;
   background-color: #FFFFFF;
 }
