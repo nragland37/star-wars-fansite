@@ -154,6 +154,10 @@ audio {
   margin-right: auto;
 }
 
+iframe {
+  border: 0px;
+}
+
 /*Start: Table*/
 table {
   padding-left: 25px;
