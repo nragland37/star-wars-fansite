@@ -402,20 +402,16 @@ tr:nth-child(even) {
 .fa-facebook:hover {
   background: #3B5998;
   color: #FFFFFF;
-  font-weight: none;
-  color: #FFFFFF;
   right: 0;
   text-decoration: none;
 }
 
 .fa-facebook:after {
-  border-radius: none;
+  border-radius: 0%;
   border-top: none;
   content: "";
-  position: none;
-  right: none;
-  bottom: none;
-  left: none;
+  position: absolute;
+  left: 0;
   transition: none;
 }
 
@@ -426,20 +422,16 @@ tr:nth-child(even) {
 .fa-twitter:hover {
   background: #55ACEE;
   color: #FFFFFF;
-  font-weight: none;
-  color: #FFFFFF;
   right: 0;
   text-decoration: none;
 }
 
 .fa-twitter:after {
-  border-radius: none;
+  border-radius: 0%;
   border-top: none;
   content: "";
-  position: none;
-  right: none;
-  bottom: none;
-  left: none;
+  position: absolute;
+  left: 0;
   transition: none;
 }
 
@@ -450,20 +442,16 @@ tr:nth-child(even) {
 .fa-instagram:hover {
   background: #125688;
   color: #FFFFFF;
-  font-weight: none;
-  color: #FFFFFF;
   right: 0;
   text-decoration: none;
 }
 
 .fa-instagram:after {
-  border-radius: none;
+  border-radius: 0%;
   border-top: none;
   content: "";
-  position: none;
-  right: none;
-  bottom: none;
-  left: none;
+  position: absolute;
+  left: 0;
   transition: none;
 }
 
@@ -474,20 +462,16 @@ tr:nth-child(even) {
 .fa-youtube:hover {
   background: #bb0000;
   color: #FFFFFF;
-  font-weight: none;
-  color: #FFFFFF;
   right: 0;
   text-decoration: none;
 }
 
 .fa-youtube:after {
-  border-radius: none;
+  border-radius: 0%;
   border-top: none;
   content: "";
-  position: none;
-  right: none;
-  bottom: none;
-  left: none;
+  position: absolute;
+  left: 0;
   transition: none;
 }
 
