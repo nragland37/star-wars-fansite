@@ -557,7 +557,7 @@ a {
   transition: color 1s ease-out;  
 }
 
-#footer-b {
+.footer-b {
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
   color: #FFFFFF;
@@ -631,7 +631,13 @@ a:hover:after {
   right: 0;
 }
 
-#footer-b:hover:after {
+.footer-b:hover {
+  color: #FFFFFF;
+  right: 0;
+  text-decoration: none;
+}
+
+.footer-b:hover:after {
   border-color: #FFFFFF;
   right: 0;
 }
@@ -672,7 +678,7 @@ a:after {
               border-color .5s ease-out;
 }
 
-#footer-b:after {
+.footer-b:after {
   border-radius: 1em;
   border-top: .2em solid #FFFFFF;
   content: "";
