@@ -487,6 +487,44 @@ footer {
   text-align: center;
 }
 
+.footer-a:hover:after {
+  border-color: #0D0D0D;
+  right: 0;
+}
+
+.footer-a:after {
+  border-radius: 1em;
+  border-top: .2em solid #FFFFFF;
+  content: "";
+  position: absolute;
+  right: 100%;
+  bottom: -.2em;
+  left: 0;
+  transition: right 1.5s cubic-bezier(0,.15,0,1),
+              border-color .5s ease-out;
+}
+
+.footer-c {
+  font-size: 12px;
+}
+
+.footer-c:hover:after {
+  border-color: #0D0D0D;
+  right: 0;
+}
+
+.footer-c:after {
+  border-radius: 1em;
+  border-top: .2em solid #FFFFFF;
+  content: "";
+  position: absolute;
+  right: 100%;
+  bottom: -.2em;
+  left: 0;
+  transition: right 1.5s cubic-bezier(0,.15,0,1),
+              border-color .5s ease-out;
+}
+
 div.footer-space {
   letter-spacing: 3px;
 }
@@ -665,11 +703,6 @@ a:hover:after {
   right: 0;
 }
 
-.footer-a:hover:after {
-  border-color: #0D0D0D;
-  right: 0;
-}
-
 .footer-b:hover {
   color: #FFFFFF;
   right: 0;
@@ -696,18 +729,6 @@ a:after {
 #content-a:after {
   border-radius: 1em;
   border-top: .2em solid #F2F2F2;
-  content: "";
-  position: absolute;
-  right: 100%;
-  bottom: -.2em;
-  left: 0;
-  transition: right 1.5s cubic-bezier(0,.15,0,1),
-              border-color .5s ease-out;
-}
-
-.footer-a:after {
-  border-radius: 1em;
-  border-top: .2em solid #FFFFFF;
   content: "";
   position: absolute;
   right: 100%;
