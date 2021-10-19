@@ -1,15 +1,16 @@
 h1 {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: bolder;
 }
 
 h2 {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
 }
 
-h3,h4 {
-  font-family: 'Open Sans', sans-serif;
+h3,
+h4 {
+  font-family: "Open Sans", sans-serif;
   font-weight: bold;
 }
 
@@ -19,17 +20,17 @@ h3,h4 {
 }
 
 #content-wrap {
-  padding-bottom: 5px; 
+  padding-bottom: 5px;
 }
 
 #section {
   width: 100%;
   margin: 0 auto;
   margin-top: 150px;
-  padding-top: 5px;  
-  background-color: #FFFFFF; 
+  padding-top: 5px;
+  background-color: #ffffff;
   overflow: auto;
-  opacity: 0.90;
+  opacity: 0.9;
 }
 
 /*Title backgrounds*/
@@ -39,7 +40,7 @@ div.header-img {
   background-attachment: fixed;
   background-size: cover;
   position: relative;
-  color: #ffffff;  
+  color: #ffffff;
   text-align: center;
   height: 100vh;
   width: 100%;
@@ -56,20 +57,20 @@ div.content {
   border-width: 10px;
   border-style: solid;
   border-color: #222931;
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #000000;
   opacity: 0.88;
   page-break-after: always;
 }
 
 div.info {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 18px;
   letter-spacing: 3px;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
   display: block;
-}	
+}
 
 .center {
   text-align: center;
@@ -78,14 +79,14 @@ div.info {
 .long_time_ago_img {
   display: block;
   padding-left: 150px;
-  padding-right:0;
+  padding-right: 0;
   padding-top: 10px;
   padding-bottom: 0;
   height: 80px;
   width: 420px;
 }
 
-body { 
+body {
   background-image: url("images/star_wars_hyperspace_travel.png");
   background-repeat: no-repeat;
   background-size: 90% 100%;
@@ -93,10 +94,9 @@ body {
   background-position: center;
   background-color: #000000;
   margin: 0 auto;
-  
 }
 
-address { 
+address {
   display: block;
   font-style: italic;
   overflow: auto;
@@ -104,7 +104,7 @@ address {
 }
 
 form {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   display: block;
   margin-left: 25px;
   margin-right: 25px;
@@ -150,7 +150,7 @@ audio {
   padding-left: 100px;
   margin-top: 30px;
   margin-bottom: 30px;
-  margin-left: auto; 
+  margin-left: auto;
   margin-right: auto;
 }
 
@@ -167,36 +167,37 @@ table {
 }
 
 th {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
-  font-size:20px;
+  font-size: 20px;
 }
 
 td {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 18px;
 }
 
-td, th {
+td,
+th {
   border: 1px solid #999;
-  padding: .1em 1em;
+  padding: 0.1em 1em;
   text-align: center;
 }
 
 tr:nth-child(odd) {
-  color:#ffffff;
+  color: #ffffff;
 }
 
 tr:nth-child(even) {
-  background-color: #f2f2f2; 
-  color:#000000;
+  background-color: #f2f2f2;
+  color: #000000;
 }
 
 .odd-a {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   letter-spacing: 0;
   font-weight: bold;
-  color: #0D0D0D;
+  color: #0d0d0d;
   position: relative;
   text-decoration: none;
   transition: color 1s ease-out;
@@ -218,7 +219,7 @@ tr:nth-child(even) {
 }
 
 .even-a {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   letter-spacing: 0;
   font-weight: bold;
   color: #ffffff;
@@ -246,9 +247,9 @@ tr:nth-child(even) {
 
 /*Start: Image Grid*/
 .row {
-  display: -ms-flexbox; 
+  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap; 
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   padding: 0 70px;
 }
@@ -290,7 +291,7 @@ tr:nth-child(even) {
 }
 
 .myImg:hover {
-  opacity: 0.70;
+  opacity: 0.7;
 }
 
 .modal {
@@ -333,10 +334,10 @@ tr:nth-child(even) {
 
 @keyframes zoom {
   from {
-    transform: scale(0)
+    transform: scale(0);
   }
   to {
-    transform: scale(1)
+    transform: scale(1);
   }
 }
 
@@ -373,7 +374,7 @@ tr:nth-child(even) {
   margin-right: 0;
   padding: 0;
   overflow: auto;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 #li-social {
@@ -396,12 +397,12 @@ tr:nth-child(even) {
 }
 
 .fa-facebook {
-  color: #3B5998;
+  color: #3b5998;
 }
 
 .fa-facebook:hover {
-  background: #3B5998;
-  color: #FFFFFF;
+  background: #3b5998;
+  color: #ffffff;
   right: 0;
   text-decoration: none;
 }
@@ -416,12 +417,12 @@ tr:nth-child(even) {
 }
 
 .fa-twitter {
-  color: #55ACEE;
+  color: #55acee;
 }
 
 .fa-twitter:hover {
-  background: #55ACEE;
-  color: #FFFFFF;
+  background: #55acee;
+  color: #ffffff;
   right: 0;
   text-decoration: none;
 }
@@ -441,7 +442,7 @@ tr:nth-child(even) {
 
 .fa-instagram:hover {
   background: #125688;
-  color: #FFFFFF;
+  color: #ffffff;
   right: 0;
   text-decoration: none;
 }
@@ -461,7 +462,7 @@ tr:nth-child(even) {
 
 .fa-youtube:hover {
   background: #bb0000;
-  color: #FFFFFF;
+  color: #ffffff;
   right: 0;
   text-decoration: none;
 }
@@ -480,28 +481,27 @@ footer {
   width: 100%;
   margin: 0 auto;
   margin-top: 250px;
-  background-color: #FFFFFF; 
-  color: #0D0D0D;
+  background-color: #ffffff;
+  color: #0d0d0d;
   font-weight: bold;
   overflow: auto;
   text-align: center;
 }
 
 .footer-a:hover:after {
-  border-color: #0D0D0D;
+  border-color: #0d0d0d;
   right: 0;
 }
 
 .footer-a:after {
   border-radius: 1em;
-  border-top: .2em solid #FFFFFF;
+  border-top: 0.2em solid #ffffff;
   content: "";
   position: absolute;
   right: 100%;
-  bottom: -.2em;
+  bottom: -0.2em;
   left: 0;
-  transition: right 1.5s cubic-bezier(0,.15,0,1),
-              border-color .5s ease-out;
+  transition: right 1.5s cubic-bezier(0, 0.15, 0, 1), border-color 0.5s ease-out;
 }
 
 .footer-c {
@@ -509,20 +509,19 @@ footer {
 }
 
 .footer-c:hover:after {
-  border-color: #0D0D0D;
+  border-color: #0d0d0d;
   right: 0;
 }
 
 .footer-c:after {
   border-radius: 1em;
-  border-top: .2em solid #FFFFFF;
+  border-top: 0.2em solid #ffffff;
   content: "";
   position: absolute;
   right: 100%;
-  bottom: -.2em;
+  bottom: -0.2em;
   left: 0;
-  transition: right 1.5s cubic-bezier(0,.15,0,1),
-              border-color .5s ease-out;
+  transition: right 1.5s cubic-bezier(0, 0.15, 0, 1), border-color 0.5s ease-out;
 }
 
 div.footer-space {
@@ -550,7 +549,7 @@ ul {
   padding: 30px;
   padding-right: 100px;
   overflow: hidden;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 li {
@@ -562,24 +561,27 @@ li {
   margin-right: 0;
 }
 
-li a, #dropbtn-about {
+li a,
+#dropbtn-about {
   display: inline-block;
-  color: #0D0D0D;
+  color: #0d0d0d;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
-li a, #dropbtn-prequel {
+li a,
+#dropbtn-prequel {
   display: inline-block;
-  color: #0D0D0D;
+  color: #0d0d0d;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
-li a, #dropbtn-original {
+li a,
+#dropbtn-original {
   display: inline-block;
-  color: #0D0D0D;
+  color: #0d0d0d;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -592,15 +594,15 @@ li.dropdown {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #0D0D0D;
-  color: #FFFFFF;
+  background-color: #0d0d0d;
+  color: #ffffff;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
 .dropdown-content a {
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -616,41 +618,41 @@ li.dropdown {
 }
 
 a {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   letter-spacing: 3px;
   font-weight: bold;
-  color: #0D0D0D;
+  color: #0d0d0d;
   position: relative;
-  text-decoration:none;
+  text-decoration: none;
   transition: color 1s ease-out;
 }
 
 #content-a {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
-  color: #FFFFFF;
+  color: #ffffff;
   position: relative;
-  text-decoration:none;
-  transition: color 1s ease-out;  
+  text-decoration: none;
+  transition: color 1s ease-out;
 }
 
 .footer-b {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
-  color: #FFFFFF;
+  color: #ffffff;
   position: relative;
-  text-decoration:none;
+  text-decoration: none;
   transition: color 1s ease-out;
-}  
+}
 
 a:hover {
-  color: #0D0D0D;
+  color: #0d0d0d;
   right: 0;
   text-decoration: none;
 }
 
 a:hover:after {
-  border-color: #0D0D0D;
+  border-color: #0d0d0d;
   right: 0;
 }
 
@@ -704,50 +706,47 @@ a:hover:after {
 }
 
 .footer-b:hover {
-  color: #FFFFFF;
+  color: #ffffff;
   right: 0;
   text-decoration: none;
 }
 
 .footer-b:hover:after {
-  border-color: #FFFFFF;
+  border-color: #ffffff;
   right: 0;
 }
 
 a:after {
   border-radius: 1em;
-  border-top: .2em solid #FFFFFF;
+  border-top: 0.2em solid #ffffff;
   content: "";
   position: absolute;
   right: 100%;
-  bottom: .35em;
+  bottom: 0.35em;
   left: 0;
-  transition: right 1.5s cubic-bezier(0,.15,0,1),
-              border-color .5s ease-out;
+  transition: right 1.5s cubic-bezier(0, 0.15, 0, 1), border-color 0.5s ease-out;
 }
 
 #content-a:after {
   border-radius: 1em;
-  border-top: .2em solid #F2F2F2;
+  border-top: 0.2em solid #f2f2f2;
   content: "";
   position: absolute;
   right: 100%;
-  bottom: -.2em;
+  bottom: -0.2em;
   left: 0;
-  transition: right 1.5s cubic-bezier(0,.15,0,1),
-              border-color .5s ease-out;
+  transition: right 1.5s cubic-bezier(0, 0.15, 0, 1), border-color 0.5s ease-out;
 }
 
 .footer-b:after {
   border-radius: 1em;
-  border-top: .2em solid #FFFFFF;
+  border-top: 0.2em solid #ffffff;
   content: "";
   position: absolute;
   right: 100%;
-  bottom: -.2em;
+  bottom: -0.2em;
   left: 0;
-  transition: right 1.5s cubic-bezier(0,.15,0,1),
-              border-color .5s ease-out;
+  transition: right 1.5s cubic-bezier(0, 0.15, 0, 1), border-color 0.5s ease-out;
 }
 
 a:hover:after {
@@ -771,7 +770,7 @@ a:hover:after {
   position: relative;
   height: 900px;
   color: #f7c532;
-  font-family: 'Pathway Gothic One', sans-serif;
+  font-family: "Pathway Gothic One", sans-serif;
   font-size: 500%;
   font-weight: 600;
   letter-spacing: 6px;
@@ -800,9 +799,9 @@ a:hover:after {
 @keyframes crawl {
   0% {
     top: 0;
-    transform: rotateX(20deg)  translateZ(0);
+    transform: rotateX(20deg) translateZ(0);
   }
-  100% { 
+  100% {
     top: -6000px;
     transform: rotateX(25deg) translateZ(-2500px);
   }

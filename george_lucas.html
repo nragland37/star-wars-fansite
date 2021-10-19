@@ -1,346 +1,455 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>George Lucas</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300;400;500;700&display=swap"
+    />
+    <link rel="stylesheet" type="text/css" href="inc/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      h1 {
+        font-size: 55px;
+        letter-spacing: 5px;
+      }
 
-<head>
-	<meta charset="utf-8" />
-	<title>George Lucas</title>
-	<link rel="stylesheet" type="text/css"
-		href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300;400;500;700&display=swap">
-	<link rel="stylesheet" type="text/css" href="inc/main.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<style>
-		h1 {
-			font-size: 55px;
-			letter-spacing: 5px;
-		}
+      h2 {
+        font-size: 25px;
+        letter-spacing: 3px;
+        font-family: "Roboto", sans-serif;
+      }
 
-		h2 {
-			font-size: 25px;
-			letter-spacing: 3px;
-			font-family: 'Roboto', sans-serif;
-		}
+      p {
+        font-family: "Open Sans", sans-serif;
+        font-size: 16px;
+      }
 
-		p {
-			font-family: 'Open Sans', sans-serif;
-			font-size: 16px;
-		}
+      .headerBio {
+        font-family: "Roboto", sans-serif;
+        font-weight: bold;
+        text-align: center;
+        letter-spacing: 1px;
+        padding-left: 100px;
+        padding-right: 100px;
+      }
 
-		.headerBio {
-			font-family: 'Roboto', sans-serif;
-			font-weight: bold;
-			text-align: center;
-			letter-spacing: 1px;
-			padding-left: 100px;
-			padding-right: 100px;
-		}
+      div.space {
+        padding-left: 25px;
+      }
 
-		div.space {
-			padding-left: 25px;
-		}
+      div.indentation {
+        font-size: 16px;
+        text-indent: 50px;
+      }
 
-		div.indentation {
-			font-size: 16px;
-			text-indent: 50px;
-		}
+      div.movieTitle {
+        font-style: italic;
+        text-align: center;
+      }
 
-		div.movieTitle {
-			font-style: italic;
-			text-align: center;
-		}
+      div.header-img {
+        background-image: url("img/lucas.jpeg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        position: relative;
+        color: #ffffff;
+        text-align: center;
+        height: 85vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
 
-		div.header-img {
-			background-image: url("img/lucas.jpeg");
-			background-repeat: no-repeat;
-			background-attachment: fixed;
-			background-size: cover;
-			position: relative;
-			color: #ffffff;
-			text-align: center;
-			height: 85vh;
-			width: 100%;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-		}
+      div.body_footer {
+        text-align: right;
+        font-weight: bold;
+      }
 
-		div.body_footer {
-			text-align: right;
-			font-weight: bold;
-		}
+      .right_img {
+        float: right;
+        margin-left: 15px;
+        margin-bottom: 15px;
+        padding: 5px;
+        border-style: solid;
+        border-radius: 10px;
+        border-color: #ffffff;
+      }
 
-		.right_img {
-			float: right;
-			margin-left: 15px;
-			margin-bottom: 15px;
-			padding: 5px;
-			border-style: solid;
-			border-radius: 10px;
-			border-color: #FFFFFF;
-		}
+      .left_img {
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 15px;
+        padding: 5px;
+        border-style: solid;
+        border-radius: 10px;
+        border-color: #ffffff;
+      }
+    </style>
+  </head>
 
-		.left_img {
-			float: left;
-			margin-right: 15px;
-			margin-bottom: 15px;
-			padding: 5px;
-			border-style: solid;
-			border-radius: 10px;
-			border-color: #FFFFFF;
-		}
-	</style>
-</head>
+  <body>
+    <a id="top"></a>
 
-<body>
+    <div>
+      <ul>
+        <a href="index.html"
+          ><img
+            class="header_left_img"
+            title="Star Wars Logo"
+            src="img/star_wars_logo.png"
+            alt="Star Wars Logo"
+        /></a>
+        <li><a class="purple-a" href="contact.html">CONTACT</a></li>
+        <li><a class="blue-a" href="about.html">ABOUT</a></li>
+        <li><a class="green-a" href="artwork.html">ARTWORK</a></li>
+        <li class="dropdown">
+          <a class="red-a" href="prequel_trilogy.html" id="dropbtn-prequel"
+            >PREQUEL TRILOGY</a
+          >
+          <div class="dropdown-content">
+            <a class="green-a" href="the_phantom_menace.html"
+              >Episode I: The Phantom Menace</a
+            >
+            <a class="purple-a" href="attack_of_the_clones.html"
+              >Episode II: Attack of the Clones</a
+            >
+            <a class="blue-a" href="revenge_of_the_sith.html"
+              >Episode III: Revenge of the Sith</a
+            >
+          </div>
+        </li>
+        <li class="dropdown">
+          <a class="purple-a" href="orginal_trilogy.html" id="dropbtn-original"
+            >ORIGINAL TRILOGY</a
+          >
+          <div class="dropdown-content">
+            <a class="red-a" href="a_new_hope.html">Episode IV: A New Hope</a>
+            <a class="blue-a" href="the_empire_strikes_back.html"
+              >Episode V: The Empire Strikes Back</a
+            >
+            <a class="green-a" href="return_of_the_jedi.html"
+              >Episode VI: Return of the Jedi</a
+            >
+          </div>
+        </li>
+        <li><a class="blue-a" href="george_lucas.html">GEORGE LUCAS</a></li>
+      </ul>
+    </div>
 
-	<a id="top"></a>
+    <div id="page-container">
+      <div class="header-img">
+        <h1>GEORGE LUCAS</h1>
+      </div>
 
-	<div>
-		<ul>
-			<a href="index.html"><img class="header_left_img" title="Star Wars Logo" src="img/star_wars_logo.png"
-					alt="Star Wars Logo"></a>
-			<li><a class="purple-a" href="contact.html">CONTACT</a></li>
-			<li><a class="blue-a" href="about.html">ABOUT</a></li>
-			<li><a class="green-a" href="artwork.html">ARTWORK</a></li>
-			<li class="dropdown">
-				<a class="red-a" href="prequel_trilogy.html" id="dropbtn-prequel">PREQUEL TRILOGY</a>
-				<div class="dropdown-content">
-					<a class="green-a" href="the_phantom_menace.html">Episode I: The Phantom Menace</a>
-					<a class="purple-a" href="attack_of_the_clones.html">Episode II: Attack of the Clones</a>
-					<a class="blue-a" href="revenge_of_the_sith.html">Episode III: Revenge of the Sith</a>
-				</div>
-			</li>
-			<li class="dropdown">
-				<a class="purple-a" href="orginal_trilogy.html" id="dropbtn-original">ORIGINAL TRILOGY</a>
-				<div class="dropdown-content">
-					<a class="red-a" href="a_new_hope.html">Episode IV: A New Hope</a>
-					<a class="blue-a" href="the_empire_strikes_back.html">Episode V: The Empire Strikes Back</a>
-					<a class="green-a" href="return_of_the_jedi.html">Episode VI: Return of the Jedi</a>
-				</div>
-			</li>
-			<li><a class="blue-a" href="george_lucas.html">GEORGE LUCAS</a></li>
-		</ul>
-	</div>
+      <section id="section">
+        <div id="content-wrap">
+          <div class="content">
+            <fieldset>
+              <div class="headerBio">
+                <h3>
+                  George Walton Lucas Jr. (born May 14, 1944) is a writer,
+                  producer and director
+                </h3>
+                <h3>
+                  known for his creation of the enormously successful 'Star
+                  Wars'
+                </h3>
+                <h3>and 'Indiana Jones' film franchises.</h3>
+              </div>
+            </fieldset>
 
+            <fieldset>
+              <legend>
+                <h3>Life and Education</h3>
+              </legend>
+              <img
+                class="right_img"
+                title="Young George Lucas"
+                src="img/young-george.jpeg"
+                alt="Young George Lucas"
+                height="214"
+                width="350"
+              />
+              <div class="indentation">
+                <p>
+                  Director George Lucas is an American filmmaker and writer. He
+                  studied cinematography at the University of Southern
+                  California and caught the eye of Francis Ford Coppola, who
+                  helped him enter the film business. Lucas is best known for
+                  writing and directing Star Wars and creating the Indiana Jones
+                  series, as well as founding the Industrial Light & Magic
+                  special effects company.
+                </p>
+                <p>
+                  Lucas was born George Walton Lucas Jr. on May 14, 1944, in
+                  Modesto, California. Lucas's parents sold retail office
+                  supplies and owned a walnut ranch in California. His
+                  experiences growing up in the sleepy suburb of Modesto and his
+                  early passion for cars and motor racing would eventually serve
+                  as inspiration for his Oscar-nominated low-budget phenomenon,
+                  American Graffiti (1973).
+                </p>
+                <p>
+                  Before young Lucas became obsessed with the movie camera, he
+                  wanted to be a race car driver, but a near-fatal accident in
+                  his souped-up Fiat just days before his high school graduation
+                  quickly changed his mind. Instead, he attended community
+                  college and developed a passion for cinematography and camera
+                  tricks.
+                </p>
+                <p>
+                  Following the advice of a friend, he transferred to the
+                  University of Southern California's film school. There, he
+                  produced a short futuristic sci-fi film called Electronic
+                  Labyrinth: THX 1138 4EB, and garnered a comfortable spot under
+                  the wing of Francis Ford Coppola, who took an active interest
+                  in unleashing new filmmaking talent.
+                </p>
+                <p>
+                  Coppola convinced Warner Brothers to make a feature-length
+                  version of the film, and although a few critics recognized
+                  some philosophical depth behind all the technical wizardry,
+                  THX 1138 (re-titled) flopped terribly in its 1971 release.
+                </p>
+              </div>
+              <div class="body_footer">
+                <p><a class="footer-b" href="#top">Back To Top</a></p>
+              </div>
+            </fieldset>
 
-	<div id="page-container">
+            <fieldset>
+              <legend>
+                <h3>Movies</h3>
+              </legend>
+              <img
+                class="left_img"
+                title="George Lucas with C-3PO on the set"
+                src="img/movies-star-wars.jpeg"
+                alt="George Lucas with C-3PO on the set"
+                height="267"
+                width="400"
+              />
+              <div class="movieTitle">
+                <h4>'Star Wars'</h4>
+              </div>
+              <div class="indentation">
+                <p>
+                  Now that Lucas had won back the confidence of his supporters,
+                  he set out to make a children's Saturday morning serial that
+                  would be part fairy tale, part Flash Gordon and complete
+                  fantasy and adventure set in the imaginary frontier of outer
+                  space.
+                </p>
+                <p>
+                  The project eventually evolved into a full-length feature
+                  entitled Star Wars. Released in May 1977, Star Wars blew
+                  audiences away with its awe-inspiring special effects,
+                  fantastical landscapes, captivating characters (the erroneous
+                  pairing of two bumbling droids providing, ironically, the most
+                  heart and comic relief) and the familiar resonance of popular
+                  myth and fairy tale. Made for $11 million, the film grossed
+                  over $513 million worldwide during its original release. Lucas
+                  continued the story of the Jedi Knights and the Dark Side in
+                  The Empire Strikes Back (1980) and The Return of the Jedi
+                  (1983).
+                </p>
+                <p>
+                  In the meantime, he set up a state-of-the-art special effects
+                  company, Industrial Light & Magic (ILM), as well as a sound
+                  studio, Skywalker Sound, and began to execute more and more
+                  control over the finished product of his films. He eventually
+                  built his own moviemaking "empire" outside of the controlling
+                  influence of Hollywood in the hills of Marin Country,
+                  California.
+                </p>
+              </div>
+              <div class="body_footer">
+                <p><a class="footer-b" href="#top">Back To Top</a></p>
+              </div>
+            </fieldset>
 
-		<div class="header-img">
-			<h1>GEORGE LUCAS</h1>
-		</div>
+            <fieldset>
+              <legend>
+                <h3>Movies</h3>
+              </legend>
+              <img
+                class="right_img"
+                title="George Lucas in the desert on set"
+                src="img/movies-star-wars_prequels.jpeg"
+                alt="George Lucas in the desert on set"
+                height="235"
+                width="390"
+              />
+              <div class="movieTitle">
+                <h4>'Star Wars' Prequels</h4>
+              </div>
+              <div class="indentation">
+                <p>
+                  Finally, technology was catching up with Lucas's creative
+                  vision for his famous science-fiction saga. He had seen ILM's
+                  capabilities when it was commissioned to bring the dinosaurs
+                  of Jurassic Park (1993) to horrifying life. The progressions
+                  in technology convinced Lucas that it was time to go back to
+                  Star Wars.
+                </p>
+                <p>
+                  Lucas embarked on the development of three new prequels —
+                  beginning with the menacing Darth Vader as an innocent, gifted
+                  young boy. The first in the series, Star Wars: Episode I — The
+                  Phantom Menace, was released in the spring of 1999 to high
+                  expectations and unprecedented hype and fanfare. The response
+                  to the film was mixed. Some critics and Star Wars fans found
+                  the characters childish and racially stereotyped. Others
+                  complained that the story lacked dramatic depth. No one,
+                  however, could argue about the magical quality of Lucas'
+                  technologically masterful creations.
+                </p>
+                <p>
+                  Defending his latest creation, Lucas argued that The Phantom
+                  Menace was a children's movie, as all the Star Wars movies
+                  were meant to be before their cult-like magnetism took hold of
+                  the American public. However, a behind-the-scenes featurette
+                  that accompanied the film's release to DVD in 2001 told a
+                  different story, revealing a director who wasn't entirely
+                  satisfied with his product. "It's a little disjointed," Lucas
+                  says at one point, after watching a rough cut of the film.
+                  "It's bold in terms of jerking people around. I may have gone
+                  too far in a few places."
+                </p>
+                <p>
+                  The second installment, Episode II—Attack of the Clones,
+                  premiered on May 12, 2002, at the Tribeca Film Festival. The
+                  third episode, Revenge of the Sith, debuted in May 2005.
+                </p>
+              </div>
+              <div class="body_footer">
+                <p><a class="footer-b" href="#top">Back To Top</a></p>
+              </div>
+            </fieldset>
 
-		<section id="section">
-			<div id="content-wrap">
-				<div class="content">
+            <fieldset>
+              <legend>
+                <h3>Personal Life</h3>
+              </legend>
+              <img
+                class="left_img"
+                title="George Lucas with Wife, 'Mellody Hobson' and child"
+                src="img/george-family.jpeg"
+                alt="George Lucas with Wife, 'Mellody Hobson' and child"
+                height="184"
+                width="327"
+              />
+              <div class="indentation">
+                <p>
+                  In addition to being a filmmaker, Lucas has been dedicated to
+                  helping improve education through the George Lucas Educational
+                  Foundation. Created in the early 1990s, the organization
+                  encourages the use of project-based and team-based learning,
+                  among other education reforms. The foundation's mission is
+                  deeply personal to Lucas, who spent many years as a single
+                  father to his adopted daughter Amanda after his divorce from
+                  film editor Marcia (Griffin) Lucas in 1983. Following their
+                  split, Lucas also adopted two more children, Katie and Jett.
+                </p>
+                <p>
+                  In January 2013, Lucas announced his engagement to Mellody
+                  Hobson, president of Ariel Investments. The couple had been
+                  dating for five years prior to their engagement. The
+                  69-year-old Lucas and 44-year-old Hobson wed in late June 2013
+                  at Skywalker Ranch in Marin County, California. Shortly
+                  afterward, they welcomed daughter Everest to the family.
+                </p>
+              </div>
+              <div class="body_footer">
+                <p><a class="footer-b" href="#top">Back To Top</a></p>
+              </div>
+            </fieldset>
 
-					<fieldset>
-						<div class="headerBio">
-							<h3>George Walton Lucas Jr. (born May 14, 1944) is a writer, producer and director</h3>
-							<h3>known for his creation of the enormously successful 'Star Wars'</h3>
-							<h3>and 'Indiana Jones' film franchises.</h3>
-						</div>
-					</fieldset>
+            <address>
+              <p>“A special effect is a tool, a means of telling a story.</p>
+              <p>A special effect without a story is a pretty boring thing.”</p>
+              <p>—George Lucas</p>
+            </address>
 
-					<fieldset>
-						<legend>
-							<h3>Life and Education</h3>
-						</legend>
-						<img class="right_img" title="Young George Lucas" src="img/young-george.jpeg"
-							alt="Young George Lucas" height="214" width="350">
-						<div class="indentation">
-							<p>Director George Lucas is an American filmmaker and writer. He studied cinematography
-								at the University of Southern California and caught the eye of Francis Ford Coppola,
-								who helped him enter the film business. Lucas is best known for writing and directing
-								Star Wars and creating the Indiana Jones series, as well as founding the Industrial
-								Light
-								& Magic special effects company.</p>
-							<p>Lucas was born George Walton Lucas Jr. on May 14, 1944, in Modesto, California. Lucas's
-								parents sold retail office supplies and owned a walnut ranch in California. His
-								experiences
-								growing up in the sleepy suburb of Modesto and his early passion for cars and motor
-								racing
-								would eventually serve as inspiration for his Oscar-nominated low-budget phenomenon,
-								American Graffiti (1973).</p>
-							<p>Before young Lucas became obsessed with the movie camera, he wanted to be a race car
-								driver,
-								but a near-fatal accident in his souped-up Fiat just days before his high school
-								graduation
-								quickly changed his mind. Instead, he attended community college and developed a passion
-								for
-								cinematography and camera tricks.</p>
-							<p>Following the advice of a friend, he transferred to the University of Southern
-								California's
-								film school. There, he produced a short futuristic sci-fi film called Electronic
-								Labyrinth: THX 1138 4EB, and garnered a comfortable spot under the wing of Francis
-								Ford Coppola, who took an active interest in unleashing new filmmaking talent.</p>
-							<p>Coppola convinced Warner Brothers to make a feature-length version of the film,
-								and although a few critics recognized some philosophical depth behind all the
-								technical wizardry, THX 1138 (re-titled) flopped terribly in its 1971 release.</p>
-						</div>
-						<div class="body_footer">
-							<p><a class="footer-b" href="#top">Back To Top</a></p>
-						</div>
-					</fieldset>
+            <div class="space">
+              <h2>Citation Information</h2>
+              <h3>Article Title</h3>
+              <p>George Lucas Biography</p>
+              <h3>Author</h3>
+              <p>Biography.com Editors</p>
+              <h3>Website Name</h3>
+              <p>The Biography.com website</p>
+              <h3>URL</h3>
+              <a
+                id="content-a"
+                href="https://www.biography.com/filmmaker/george-lucas"
+                target="_blank"
+                >George Lucas Biography</a
+              >
+              <h3>Access Date</h3>
+              <p>October 11, 2021</p>
+              <h3>Publisher</h3>
+              <p>A&E Television Networks</p>
+              <h3>Last Updated</h3>
+              <p>March 26, 2021</p>
+              <h3>Original Published Date</h3>
+              <p>April 2, 2014</p>
+            </div>
+          </div>
+          <!--end div.content -->
+        </div>
+        <!--end #content-wrap -->
+      </section>
+      <!--end #section -->
 
-					<fieldset>
-						<legend>
-							<h3>Movies</h3>
-						</legend>
-						<img class="left_img" title="George Lucas with C-3PO on the set" src="img/movies-star-wars.jpeg"
-							alt="George Lucas with C-3PO on the set" height="267" width="400">
-						<div class="movieTitle">
-							<h4>'Star Wars'</h4>
-						</div>
-						<div class="indentation">
-							<p>Now that Lucas had won back the confidence of his supporters, he set out to make
-								a children's Saturday morning serial that would be part fairy tale, part Flash Gordon
-								and complete fantasy and adventure set in the imaginary frontier of outer space.</p>
-							<p>The project eventually evolved into a full-length feature entitled Star Wars.
-								Released in May 1977, Star Wars blew audiences away with its awe-inspiring special
-								effects, fantastical landscapes, captivating characters (the erroneous pairing of two
-								bumbling droids providing, ironically, the most heart and comic relief) and the familiar
-								resonance of popular myth and fairy tale. Made for $11 million, the film grossed over
-								$513 million worldwide during its original release. Lucas continued the story of the
-								Jedi Knights and the Dark Side in The Empire Strikes Back (1980) and
-								The Return of the Jedi (1983). </p>
-							<p>In the meantime, he set up a state-of-the-art special effects company, Industrial
-								Light & Magic (ILM), as well as a sound studio, Skywalker Sound, and began to execute
-								more and more control over the finished product of his films. He eventually built his
-								own moviemaking "empire" outside of the controlling influence of Hollywood in the hills
-								of Marin Country, California.</p>
-						</div>
-						<div class="body_footer">
-							<p><a class="footer-b" href="#top">Back To Top</a></p>
-						</div>
-					</fieldset>
-
-					<fieldset>
-						<legend>
-							<h3>Movies</h3>
-						</legend>
-						<img class="right_img" title="George Lucas in the desert on set"
-							src="img/movies-star-wars_prequels.jpeg" alt="George Lucas in the desert on set"
-							height="235" width="390">
-						<div class="movieTitle">
-							<h4>'Star Wars' Prequels</h4>
-						</div>
-						<div class="indentation">
-							<p>Finally, technology was catching up with Lucas's creative vision for his famous
-								science-fiction saga. He had seen ILM's capabilities when it was commissioned to bring
-								the dinosaurs of Jurassic Park (1993) to horrifying life. The progressions in technology
-								convinced Lucas that it was time to go back to Star Wars.</p>
-							<p>Lucas embarked on the development of three new prequels — beginning with the menacing
-								Darth Vader as an innocent, gifted young boy. The first in the series,
-								Star Wars: Episode I — The Phantom Menace, was released in the spring of 1999 to
-								high expectations and unprecedented hype and fanfare. The response to the film was
-								mixed.
-								Some critics and Star Wars fans found the characters childish and racially stereotyped.
-								Others complained that the story lacked dramatic depth. No one, however, could argue
-								about
-								the magical quality of Lucas' technologically masterful creations. </p>
-							<p>Defending his latest creation, Lucas argued that The Phantom Menace was a children's
-								movie,
-								as all the Star Wars movies were meant to be before their cult-like magnetism took hold
-								of
-								the American public. However, a behind-the-scenes featurette that accompanied the film's
-								release to DVD in 2001 told a different story, revealing a director who wasn't entirely
-								satisfied with his product. "It's a little disjointed," Lucas says at one point,
-								after watching a rough cut of the film. "It's bold in terms of jerking people around.
-								I may have gone too far in a few places." </p>
-							<p>The second installment, Episode II—Attack of the Clones, premiered on May 12, 2002,
-								at the Tribeca Film Festival. The third episode, Revenge of the Sith,
-								debuted in May 2005.</p>
-						</div>
-						<div class="body_footer">
-							<p><a class="footer-b" href="#top">Back To Top</a></p>
-						</div>
-					</fieldset>
-
-					<fieldset>
-						<legend>
-							<h3>Personal Life</h3>
-						</legend>
-						<img class="left_img" title="George Lucas with Wife, 'Mellody Hobson' and child"
-							src="img/george-family.jpeg" alt="George Lucas with Wife, 'Mellody Hobson' and child"
-							height="184" width="327">
-						<div class="indentation">
-							<p>In addition to being a filmmaker, Lucas has been dedicated to helping improve education
-								through the George Lucas Educational Foundation. Created in the early 1990s,
-								the organization encourages the use of project-based and team-based learning,
-								among other education reforms. The foundation's mission is deeply personal to Lucas,
-								who spent many years as a single father to his adopted daughter Amanda after his divorce
-								from film editor Marcia (Griffin) Lucas in 1983. Following their split, Lucas also
-								adopted
-								two more children, Katie and Jett.</p>
-							<p>In January 2013, Lucas announced his engagement to Mellody Hobson, president of Ariel
-								Investments.
-								The couple had been dating for five years prior to their engagement. The 69-year-old
-								Lucas and 44-year-old Hobson wed in late June 2013 at Skywalker Ranch in Marin County,
-								California. Shortly afterward, they welcomed daughter Everest to the family.</p>
-						</div>
-						<div class="body_footer">
-							<p><a class="footer-b" href="#top">Back To Top</a></p>
-						</div>
-					</fieldset>
-
-					<address>
-						<p>“A special effect is a tool, a means of telling a story.</p>
-						<p>A special effect without a story is a pretty boring thing.”</p>
-						<p>—George Lucas</p>
-					</address>
-
-					<div class="space">
-						<h2>Citation Information</h2>
-						<h3>Article Title</h3>
-						<p>George Lucas Biography
-						<p>
-						<h3>Author</h3>
-						<p>Biography.com Editors
-						<p>
-						<h3>Website Name</h3>
-						<p>The Biography.com website
-						<p>
-						<h3>URL</h3>
-						<a id="content-a" href="https://www.biography.com/filmmaker/george-lucas" target="_blank">George
-							Lucas Biography</a>
-						<h3>Access Date</h3>
-						<p>October 11, 2021
-						<p>
-						<h3>Publisher</h3>
-						<p>A&E Television Networks
-						<p>
-						<h3>Last Updated</h3>
-						<p>March 26, 2021
-						<p>
-						<h3>Original Published Date</h3>
-						<p>April 2, 2014
-						<p>
-					</div>
-
-				</div>
-				<!--end div.content -->
-			</div>
-			<!--end #content-wrap -->
-		</section>
-		<!--end #section -->
-
-		<footer>
-			<ul id="ul-social">
-			  <li id="li-social">
-				<a class="fa fa-facebook" href="https://www.facebook.com/StarWars" target="_blank" title="facebook"></a>
-				<a class="fa fa-instagram" href="https://www.instagram.com/starwars/" target="_blank" title="instagram"></a>
-				<a class="fa fa-twitter" href="https://twitter.com/starwars" target="_blank" title="twitter"></a>
-				<a class="fa fa-youtube" href="https://www.youtube.com/user/starwars" target="_blank" title="youtube"></a>
-			  </li>
-			</ul>
-			<div class="footer-space">
-			  <p><a class="footer-a" href="https://www.webster.edu/" target="_blank">Webster University</a></p>
-			  <p>© 2021 Nicholas Ragland</p>
-			  <p><a class="footer-c" href="#top">Back To Top</a></p>
-			</div>
-		  </footer>
-
-	</div>
-	<!--end #page-container -->
-</body>
-
+      <footer>
+        <ul id="ul-social">
+          <li id="li-social">
+            <a
+              class="fa fa-facebook"
+              href="https://www.facebook.com/StarWars"
+              target="_blank"
+              title="facebook"
+            ></a>
+            <a
+              class="fa fa-instagram"
+              href="https://www.instagram.com/starwars/"
+              target="_blank"
+              title="instagram"
+            ></a>
+            <a
+              class="fa fa-twitter"
+              href="https://twitter.com/starwars"
+              target="_blank"
+              title="twitter"
+            ></a>
+            <a
+              class="fa fa-youtube"
+              href="https://www.youtube.com/user/starwars"
+              target="_blank"
+              title="youtube"
+            ></a>
+          </li>
+        </ul>
+        <div class="footer-space">
+          <p>
+            <a class="footer-a" href="https://www.webster.edu/" target="_blank"
+              >Webster University</a
+            >
+          </p>
+          <p>© 2021 Nicholas Ragland</p>
+          <p><a class="footer-c" href="#top">Back To Top</a></p>
+        </div>
+      </footer>
+    </div>
+    <!--end #page-container -->
+  </body>
 </html>
