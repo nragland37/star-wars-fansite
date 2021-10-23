@@ -120,7 +120,7 @@
               method="post"
               enctype="text/plain"
               autocomplete="on"
-              action="mailto:nragland37@gmail.com"
+              id="contactForm"
             >
               <fieldset>
                 <legend>Contact info</legend>
@@ -287,6 +287,13 @@
             if (item !== checkbox) item.checked = false;
           });
         }
+        
+        var contactForm = document.getElementById("contactForm");
+        contactForm.addEventListener("submit", function(ev) {
+          // TODO: add body
+          window.open('mailto:nragland37@gmail.com?subject=subject&body=body');
+        });
+        
       </script>
 
       <footer>
