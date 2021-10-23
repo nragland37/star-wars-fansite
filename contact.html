@@ -289,9 +289,11 @@
         }
         
         var contactForm = document.getElementById("contactForm");
-        contactForm.addEventListener("submit", function(ev) {
+        contactForm.addEventListener("submit", function(event) {
           // TODO: add body
-          window.open('mailto:nragland37@gmail.com?subject=subject&body=body');
+          var body = 'some BODY once told me...'
+          window.open('mailto:nragland37@gmail.com?subject=subject&body=' + body);
+          event.stopPropagation();
         });
         
       </script>
