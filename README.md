@@ -5,7 +5,7 @@ https://user-images.githubusercontent.com/92565109/193442582-dd6428b5-7ce1-41b7-
 
 
 ## About
-This Star Wars Website was my Term-Project from a Web Development class at Webster University. In fact, this is the first website I had ever developed!!! It was created using *HTML5*, *CSS3*, and a bit of *JavaScript*. The website is *exclusively* about the Star Wars films written by George Lucas. 
+This Star Wars Website was my Term-Project from a Web Development class at Webster University. In fact, this is the first website I had ever developed. It was created using *HTML5*, *CSS3*, and a bit of *JavaScript*. The website is *exclusively* about the Star Wars films written by George Lucas. 
 
 
 Below, are video snippets showcasing thia websites *functionality* and *usability*.          
