@@ -1,5 +1,5 @@
 # A long time ago in a 🌌 galaxy far, far away...  
-This website is published at https://nragland37.github.io/star-wars/
+This website is published at https://nragland37.github.io/star-wars-website/
 
 https://user-images.githubusercontent.com/92565109/193442582-dd6428b5-7ce1-41b7-942f-e2b5df8107a5.mp4
 
