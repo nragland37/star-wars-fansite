@@ -14,7 +14,7 @@ Below, are video snippets showcasing this websites *functionality* and *usabilit
 
 https://user-images.githubusercontent.com/92565109/193444565-9cbc46a9-6354-4f24-a3dc-357d1ed51f83.mp4
 
-## Orignal Trilogy
+## Original Trilogy
 
 https://user-images.githubusercontent.com/92565109/193444745-6f186ade-d8d2-4d0a-87b7-990ab871fcce.mp4
 
