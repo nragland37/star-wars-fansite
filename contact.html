@@ -233,7 +233,7 @@
                     name="force"
                     id="dark-side"
                     onclick="onlyOne(this)"
-                    alue="dark-side"
+                    value="dark-side"
                   />
                 </div>
               </fieldset>
@@ -280,15 +280,6 @@
       </section>
       <!--end #section -->
 
-      <script>
-        function onlyOne(checkbox) {
-          var checkboxes = document.getElementsByName("force");
-          checkboxes.forEach((item) => {
-            if (item !== checkbox) item.checked = false;
-          });
-        }
-      </script>
-
       <footer>
         <ul id="ul-social">
           <li id="li-social">
@@ -330,5 +321,6 @@
       </footer>
     </div>
     <!--end #page-container -->
+    <script src="js/contact-script.js"></script>
   </body>
 </html>
