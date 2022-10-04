@@ -1,4 +1,3 @@
-
 var modal = document.getElementById("myModal");
 var images = document.getElementsByClassName("myImg");
 var modalImg = document.getElementById("img01");
