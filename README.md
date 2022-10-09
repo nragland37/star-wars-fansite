@@ -1,5 +1,5 @@
 # <p align="center">  A long time ago in a 🌌 galaxy far, far away... </p>
-### This website is published at https://nragland37.github.io/starwars-fansite/
+This website is published at https://nragland37.github.io/starwars-fansite/
 
 https://user-images.githubusercontent.com/92565109/193442582-dd6428b5-7ce1-41b7-942f-e2b5df8107a5.mp4
 
