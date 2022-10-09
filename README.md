@@ -1,5 +1,5 @@
 # <p align="center">  A long time ago in a 🌌 galaxy far, far away... </p>
-There was a Star Wars fan-website created! 
+### There was STAR WARS... 
 
 Enjoy!
 
@@ -12,7 +12,7 @@ https://user-images.githubusercontent.com/92565109/193442582-dd6428b5-7ce1-41b7-
 <br>
 
 ## Description
-This Star Wars Fansite is a Term-Project from a Web Development class at Webster University. In fact, this is the first website I had ever developed! It was created using *HTML5*, *CSS3*, and a bit of *JavaScript*. The website is *exclusively* about the Star Wars films written by George Lucas. 
+This Star Wars Fansite is a Term-Project from a Web Development class at Webster University. In fact, this is the first website I had ever developed! It was created using *HTML*, *CSS*, and a bit of *JavaScript*. The website is *exclusively* about the Star Wars films written by George Lucas. 
 
 
 Below, are video snippets showcasing this websites *functionality* and *usability*.    
