@@ -47,3 +47,8 @@ https://user-images.githubusercontent.com/92565109/193445064-c302c5e4-fac6-4e3f-
 ## <p align="center">[Contact](src/contact.html) </p>
 
 https://user-images.githubusercontent.com/92565109/193445189-24845d5c-3c5a-4d9f-8f40-553ae75e99aa.mp4
+
+<br>
+<br>
+
+<p align="center"> Copyright (c) 2022 Nicholas Ragland </p>
