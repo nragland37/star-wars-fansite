@@ -8,7 +8,7 @@ Enjoy!
 
 <br>
 
-### <p align="center"> https://nragland37.github.io/star-wars/ </p>
+### <p align="center"> https://nragland37.github.io/star-wars </p>
 
 https://user-images.githubusercontent.com/92565109/193442582-dd6428b5-7ce1-41b7-942f-e2b5df8107a5.mp4
 
