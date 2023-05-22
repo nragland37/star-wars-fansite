@@ -8,5 +8,3 @@ This Star Wars fansite is the very first website I've ever developed! The site i
 
 <br>
 <br>
-
-<p align="center"> Copyright (c) 2022 Nicholas Ragland </p>
