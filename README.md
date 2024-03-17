@@ -2,7 +2,7 @@
 
 # A long time ago in a galaxy far, far away...
 
-![Star Wars GIF](https://media.giphy.com/media/1OWQXIEERRuQq61W4H/giphy.gif)
+![Star Wars GIF](https://framerusercontent.com/images/HVzApGKkH6YM1vUO9zOo5lJBC4.jpeg)
 
 </div>
 
