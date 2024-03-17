@@ -1,6 +1,12 @@
-# <p align="center">  A long time ago in a 🌌 galaxy far, far away... </p>
+<div align="center">
 
-This Star Wars fansite is the very first website I've ever developed! The site is devoted entirely to celebrating and exploring the Star Wars movies written by George Lucas.
+# A long time ago in a galaxy far, far away...
+
+![Star Wars GIF](https://media.giphy.com/media/1OWQXIEERRuQq61W4H/giphy.gif)
+
+</div>
+
+<p align="center"> Star Wars fansite devoted entirely to celebrating and exploring the Star Wars films written by George Lucas. </p>
 
 <br>
 
