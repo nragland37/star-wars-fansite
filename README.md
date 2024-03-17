@@ -10,7 +10,7 @@
 
 <br>
 
-### <p align="center"> https://nragland37.github.io/star-wars </p>
+### <p align="center"> https://nragland37.github.io/star-wars-fansite </p>
 
 <br>
 <br>
