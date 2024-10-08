@@ -19,38 +19,8 @@
         letter-spacing: 5px;
       }
 
-      p {
-        font-family: "Open Sans", sans-serif;
-        font-size: 16px;
-      }
-
-      h1 {
-        font-size: 55px;
-        letter-spacing: 5px;
-      }
-
       div.header-img {
         background-image: url("img/empire_art.jpeg");
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        position: relative;
-        color: #ffffff;
-        text-align: center;
-        height: 85vh;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 50px;
-      }
-
-      img {
-        width: 100%;
-      }
-
-      footer {
-        margin-top: 75px;
       }
     </style>
   </head>
@@ -109,7 +79,7 @@
         <h1>ARTWORK</h1>
       </div>
 
-      <div id="box">
+      <div id="grid">
         <div class="row">
           <div class="column">
             <img
@@ -266,12 +236,12 @@
           </div>
         </div>
 
-        <div id="grid">
-          <div id="myModal" class="modal">
-            <span class="close">&times;</span>
-            <img class="modal-content" id="img01" />
-            <div id="caption"></div>
-          </div>
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01" />
+          <div id="caption"></div>
+          <p class="prev">&#10094;</p>
+          <p class="next">&#10095;</p>
         </div>
       </div>
 
@@ -305,11 +275,6 @@
           </li>
         </ul>
         <div class="footer-space">
-          <p>
-            <a class="footer-a" href="https://www.webster.edu/" target="_blank"
-              >Webster University</a
-            >
-          </p>
           <p>© 2021 Nicholas Ragland</p>
           <p><a class="footer-c" href="#top">Back To Top</a></p>
         </div>

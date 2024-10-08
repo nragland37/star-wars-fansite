@@ -14,80 +14,20 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <style>
-      h1 {
-        font-size: 55px;
-        letter-spacing: 5px;
-      }
-
-      p {
-        font-family: "Open Sans", sans-serif;
-        font-size: 16px;
-      }
-
       .noIndent {
         text-indent: 0;
       }
 
-      .h3 {
-        letter-spacing: 5px;
-      }
-
       div.header-img {
         background-image: url("img/flying.png");
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        position: relative;
-        color: #ffffff;
-        text-align: center;
-        height: 75vh;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-
-      div.indentation {
-        font-size: 16px;
-        text-indent: 50px;
       }
 
       .mySlides {
         display: none;
       }
 
-      .img {
-        vertical-align: middle;
-        height: 100%;
-        width: 100%;
-      }
-
-      .slideshow-container {
-        max-width: 600px;
-        position: relative;
-        margin: auto;
-        box-sizing: border-box;
-        padding-top: 50px;
-      }
-
-      .text {
-        font-family: "Roboto", sans-serif;
-        letter-spacing: 5px;
-        color: #f2f2f2;
-        font-size: 18px;
-        padding: 8px 12px;
-        position: absolute;
-        bottom: 8px;
-        width: 100%;
-        text-align: center;
-      }
-
-      .numbertext {
-        color: #f2f2f2;
-        font-size: 12px;
-        padding: 8px 12px;
-        position: absolute;
-        top: 0;
+      .active-slide {
+        display: block;
       }
 
       .dot {
@@ -104,62 +44,9 @@
         background-color: #717171;
       }
 
-      .fade {
-        -webkit-animation-name: fade;
-        -webkit-animation-duration: 1.5s;
-        animation-name: fade;
-        animation-duration: 1.5s;
-      }
-
-      @-webkit-keyframes fade {
-        from {
-          opacity: 0.4;
-        }
-
-        to {
-          opacity: 1;
-        }
-      }
-
-      @keyframes fade {
-        from {
-          opacity: 0.4;
-        }
-
-        to {
-          opacity: 1;
-        }
-      }
-
-      @media only screen and (max-width: 300px) {
-        .text {
-          font-size: 11px;
-        }
-      }
-
-      div.body_footer {
-        text-align: right;
-        font-weight: bold;
-      }
-
-      .left_img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 15px;
-        padding: 5px;
-        border-style: solid;
-        border-radius: 10px;
-        border-color: #ffffff;
-      }
-
-      .right_img {
-        float: right;
-        margin-left: 15px;
-        margin-bottom: 15px;
-        padding: 5px;
-        border-style: solid;
-        border-radius: 10px;
-        border-color: #ffffff;
+      .dot-container {
+        text-align: center;
+        padding-top: 10px;
       }
     </style>
   </head>
@@ -340,6 +227,7 @@
                     Beautiful sunset by Pomme de Terre Lake
                   </div>
                 </div>
+
                 <div class="mySlides fade">
                   <div class="numbertext">2 / 10</div>
                   <img
@@ -349,6 +237,7 @@
                   />
                   <div class="text">Kayaking with my dad</div>
                 </div>
+
                 <div class="mySlides fade">
                   <div class="numbertext">3 / 10</div>
                   <img
@@ -358,6 +247,7 @@
                   />
                   <div class="text">Camping by the Colorado River</div>
                 </div>
+
                 <div class="mySlides fade">
                   <div class="numbertext">4 / 10</div>
                   <img
@@ -367,6 +257,7 @@
                   />
                   <div class="text">Forest Park</div>
                 </div>
+
                 <div class="mySlides fade">
                   <div class="numbertext">5 / 10</div>
                   <img
@@ -376,11 +267,13 @@
                   />
                   <div class="text">Camping by Arapaho Bay</div>
                 </div>
+
                 <div class="mySlides fade">
                   <div class="numbertext">6 / 10</div>
                   <img class="img" src="img/trail.jpeg" alt="Hiking" />
                   <div class="text">Hiking</div>
                 </div>
+
                 <div class="mySlides fade">
                   <div class="numbertext">7 / 10</div>
                   <img
@@ -390,6 +283,7 @@
                   />
                   <div class="text">My kitty, Sakura</div>
                 </div>
+
                 <div class="mySlides fade">
                   <div class="numbertext">8 / 10</div>
                   <img
@@ -399,6 +293,7 @@
                   />
                   <div class="text">My dog, Delilah</div>
                 </div>
+
                 <div class="mySlides fade">
                   <div class="numbertext">9 / 10</div>
                   <img
@@ -408,6 +303,7 @@
                   />
                   <div class="text">Backpacking</div>
                 </div>
+
                 <div class="mySlides fade">
                   <div class="numbertext">10 / 10</div>
                   <img
@@ -419,27 +315,12 @@
                 </div>
               </div>
 
-              <br />
-
-              <div style="text-align: center">
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-              </div>
+              <!-- Dots for navigation -->
+              <div class="dot-container"></div>
             </fieldset>
           </div>
-          <!--end div.content -->
         </div>
-        <!--end #content-wrap -->
       </section>
-      <!--end #section -->
 
       <footer>
         <ul id="ul-social">
@@ -471,17 +352,12 @@
           </li>
         </ul>
         <div class="footer-space">
-          <p>
-            <a class="footer-a" href="https://www.webster.edu/" target="_blank"
-              >Webster University</a
-            >
-          </p>
           <p>© 2021 Nicholas Ragland</p>
           <p><a class="footer-c" href="#top">Back To Top</a></p>
         </div>
       </footer>
     </div>
-    <!--end #page-container -->
+
     <script src="js/about-script.js"></script>
   </body>
 </html>

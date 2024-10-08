@@ -12,6 +12,14 @@
     <style>
       body {
         overflow: hidden;
+        background-color: black;
+      }
+
+      p {
+        font-family: "Roboto", sans-serif;
+        font-size: 1.8em;
+        letter-spacing: 5px;
+        text-align: center;
       }
     </style>
   </head>
@@ -63,40 +71,35 @@
       </ul>
     </div>
 
+    <!-- Audio -->
     <div>
-      <audio controls>
+      <audio id="themeAudio" controls>
         <source src="audio/star_wars_theme_song.ogg" type="audio/ogg" />
         <source src="audio/star_wars_theme_song.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
       </audio>
     </div>
 
-    <div class="fade">
-      <div class="info">
-        <p>
-          For more information on
-          <strong>Star Wars: Episode I - The Phantom Menace</strong>, visit the
-          <a
-            id="content-a"
-            href="https://www.imdb.com/title/tt0120915/"
-            target="_blank"
-            >Internet Movie Database</a
-          >.
-        </p>
-      </div>
-      <img
-        class="long_time_ago_img"
-        title="A long time ago in a galaxy far,far away...."
-        src="img/long_time_ago.png"
-        alt="A long time ago in a galaxy far,far away...."
-      />
-    </div>
+    <!-- Star Wars Crawl -->
+    <section class="intro">
+      A long time ago, in a galaxy far,<br />
+      far away....
+    </section>
 
-    <section class="star-wars">
-      <div class="crawl">
-        <div class="title">
-          <p>Episode I</p>
-          <h1>THE PHANTOM MENACE</h1>
-        </div>
+    <section class="logo">
+      <object
+        type="image/svg+xml"
+        data="inc/star_wars_logo.svg"
+        width="693"
+        height="419"
+      ></object>
+    </section>
+
+    <div id="board">
+      <div id="content">
+        <p id="title">Episode I<</p>
+        <p id="subtitle">THE PHANTOM MENACE</p>
+        <br />
         <p>
           Turmoil has engulfed the Galactic Republic. The taxation of trade
           routes to outlying star systems is in dispute.
@@ -113,6 +116,8 @@
           settle the conflict....
         </p>
       </div>
-    </section>
+    </div>
+
+    <script src="js/audio-control.js"></script>
   </body>
 </html>

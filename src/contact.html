@@ -14,47 +14,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <style>
-      p {
-        font-family: "Open Sans", sans-serif;
-        font-size: 16px;
-      }
-
-      .space {
-        float: left;
-        clear: left;
-        width: 35em;
-      }
-
-      .space_message {
-        float: left;
-        clear: left;
-        width: 12.25em;
-      }
-
-      .space_light_dark {
-        float: left;
-        clear: left;
-        width: 12em;
-      }
-
-      h1 {
-        font-size: 55px;
-        letter-spacing: 5px;
-      }
-
       div.header-img {
         background-image: url("img/boba_fett.jpeg");
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        position: relative;
-        color: #ffffff;
-        text-align: center;
-        height: 75vh;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
       }
     </style>
   </head>
@@ -123,15 +84,15 @@
               action="mailto:nragland37@gmail.com"
             >
               <fieldset>
-                <legend>Contact info</legend>
-                <div>
-                  <label for="name">Full Name: </label>
+                <legend>Contact Info</legend>
+                <div class="form-group">
+                  <label for="name">Full Name:</label>
                   <input type="text" name="name" id="name" size="30" required />
                 </div>
-                <div>
-                  <label for="email">Email address: </label>
+                <div class="form-group">
+                  <label for="email">Email Address:</label>
                   <input
-                    type="text"
+                    type="email"
                     name="email"
                     id="email"
                     size="30"
@@ -141,8 +102,8 @@
               </fieldset>
 
               <fieldset>
-                <legend>What are your Favorite Films?</legend>
-                <div>
+                <legend>What Are Your Favorite Films?</legend>
+                <div class="form-group">
                   <label class="space" for="a-new-hope"
                     >Episode IV: A New Hope (1977)</label
                   >
@@ -153,7 +114,7 @@
                     value="a-new-hope"
                   />
                 </div>
-                <div>
+                <div class="form-group">
                   <label class="space" for="the-empire-strikes-back"
                     >Episode V: The Empire Strikes Back (1980)</label
                   >
@@ -164,9 +125,9 @@
                     value="the-empire-strikes-back"
                   />
                 </div>
-                <div>
+                <div class="form-group">
                   <label class="space" for="the-return-of-the-jedi"
-                    >Episode VI: The Return of the Jedi (1983)</label
+                    >Episode VI: Return of the Jedi (1983)</label
                   >
                   <input
                     type="checkbox"
@@ -175,7 +136,7 @@
                     value="the-return-of-the-jedi"
                   />
                 </div>
-                <div>
+                <div class="form-group">
                   <label class="space" for="the-phantom-menace"
                     >Episode I: The Phantom Menace (1999)</label
                   >
@@ -186,7 +147,7 @@
                     value="the-phantom-menace"
                   />
                 </div>
-                <div>
+                <div class="form-group">
                   <label class="space" for="attack-of-the-clones"
                     >Episode II: Attack of the Clones (2002)</label
                   >
@@ -197,7 +158,7 @@
                     value="attack-of-the-clones"
                   />
                 </div>
-                <div>
+                <div class="form-group">
                   <label class="space" for="revenge-of-the-sith"
                     >Episode III: Revenge of the Sith (2005)</label
                   >
@@ -212,10 +173,10 @@
 
               <fieldset>
                 <legend>The Light or Dark Side of the Force?</legend>
-                <div>
+                <div class="form-group">
                   <label class="space_light_dark" for="light-side"
-                    >Light Side
-                  </label>
+                    >Light Side</label
+                  >
                   <input
                     type="checkbox"
                     name="force"
@@ -224,7 +185,7 @@
                     value="light-side"
                   />
                 </div>
-                <div>
+                <div class="form-group">
                   <label class="space_light_dark" for="dark-side"
                     >Dark Side</label
                   >
@@ -240,8 +201,8 @@
 
               <fieldset>
                 <legend>Have Questions/Comments?</legend>
-                <div>
-                  <label class="space_message" for="message">Message: </label>
+                <div class="form-group">
+                  <label class="space_message" for="message">Message:</label>
                   <textarea
                     rows="10"
                     cols="40"
@@ -255,15 +216,15 @@
                 <input type="submit" value="Submit" />
               </div>
 
-              <div>
+              <div class="center">
                 <input type="reset" value="Reset form" />
               </div>
 
-              <div>
-                <h2 class="center">May the Force be With You</h2>
+              <div class="center">
+                <h2>May the Force be With You</h2>
               </div>
 
-              <address>
+              <address class="center">
                 <p>
                   E-mail me directly:
                   <a id="content-a" href="mailto:nragland37@gmail.com"
@@ -310,11 +271,6 @@
           </li>
         </ul>
         <div class="footer-space">
-          <p>
-            <a class="footer-a" href="https://www.webster.edu/" target="_blank"
-              >Webster University</a
-            >
-          </p>
           <p>© 2021 Nicholas Ragland</p>
           <p><a class="footer-c" href="#top">Back To Top</a></p>
         </div>
