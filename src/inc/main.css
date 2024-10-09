@@ -178,12 +178,12 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
+  background-attachment: fixed;
   height: 95vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
   color: #ffffff;
 }
 
