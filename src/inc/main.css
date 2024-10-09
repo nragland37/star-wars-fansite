@@ -183,7 +183,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-attachment: scroll
+  background-attachment: scroll;
   position: relative;
   color: #ffffff;
 }
