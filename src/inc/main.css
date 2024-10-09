@@ -29,27 +29,62 @@ p {
 }
 
 @media (max-width: 768px) {
+  h1 {
+    font-size: 48px; /* Slightly larger font for mobile */
+  }
+
+  h2 {
+    font-size: 36px; /* Larger h2 for mobile */
+  }
+
+  h3,
+  h4 {
+    font-size: 28px; /* Adjusted for readability on mobile */
+  }
+
   p {
-    font-size: 15px;
-    line-height: 1.5;
-    margin-bottom: 1.2em;
+    font-size: 17px; /* Increased font size for better readability */
+    line-height: 1.6;
+    margin-bottom: 1.4em;
+  }
+
+  div.indentation {
+    padding-left: 25px;
+    padding-right: 25px;
+    text-indent: 25px;
   }
 }
 
-div.indentation {
-  padding-left: 40px;
-  padding-right: 40px;
-  text-indent: 30px;
-  margin-bottom: 1.5em;
-}
+@media (max-width: 480px) {
+  h1 {
+    font-size: 40px; /* Larger font size for very small devices */
+  }
 
-@media (max-width: 768px) {
+  h2 {
+    font-size: 32px;
+  }
+
+  h3,
+  h4 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 16px; /* Increase mobile font size for readability */
+    line-height: 1.6;
+    margin-bottom: 1.3em;
+  }
+
   div.indentation {
     padding-left: 20px;
     padding-right: 20px;
     text-indent: 20px;
   }
 }
+
+/**************************
+ * Header Bio
+ **************************/
 
 .headerBio {
   font-family: "Roboto", sans-serif;
@@ -58,6 +93,22 @@ div.indentation {
   letter-spacing: 1px;
   padding-left: 100px;
   padding-right: 100px;
+}
+
+@media (max-width: 768px) {
+  .headerBio {
+    font-size: 20px; /* Adjust font size for mobile */
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .headerBio {
+    font-size: 18px; /* Further adjustments for small devices */
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 /**************************
@@ -82,7 +133,7 @@ div.indentation {
   margin: 100px auto;
   padding: 20px;
   opacity: 0.9;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: transparent;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
@@ -129,15 +180,15 @@ div.indentation {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-position: center top;  /* Optimized for larger screens */
+  background-position: center center;
 }
 
 @media (max-width: 768px) {
   div.header-img {
     background-attachment: scroll;
     height: 50vh;
-    background-position: center center;  /* Center for better focus in middle devices */
-    background-size: cover;  /* Maintain cover to ensure the image covers the area well */
+    background-position: center center;
+    background-size: cover;  
   }
 }
 
@@ -145,7 +196,6 @@ div.indentation {
   div.header-img {
     height: 40vh;
     background-position: center center;  /* Ensuring the image remains centered */
-    background-size: contain;  /* Optional: Switch to contain if the image looks cut off */
   }
 }
 
@@ -166,10 +216,11 @@ div.content {
   padding: 20px;
   border: 1px solid #222931;
   border-radius: 8px;
-  background-color: rgba(0, 0, 0, 0.95); /* Keep content more solid */
+  background-color: rgba(0, 0, 0, 0.95); 
   color: #ffffff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: white 0 0 75px;
   overflow: hidden;
+  opacity: 0.85; /* Slightly transparent */
 }
 
 @media (max-width: 1200px) {
@@ -210,7 +261,7 @@ div.info {
 
 div.space {
   padding-left: 25px;
-  padding-right: 25px;
+  padding-right: 5px;
   padding-top: 25px;
   padding-bottom: 25px;
 }
@@ -383,7 +434,7 @@ div.space {
  **************************/
 body {
   background-image: url("images/star_wars_hyperspace_travel.png");
-  background-size: 300px 300px;
+  background-size: 475px 475px;
   background-position: center;
   background-repeat: repeat;
   background-attachment: scroll;
@@ -393,7 +444,7 @@ body {
 
 @media (max-width: 768px) {
   body {
-    background-size: 50px 50px;
+    background-size: 100px 100px;
   }
 }
 
@@ -427,20 +478,25 @@ form {
   justify-content: space-between;
 }
 .form-group label {
-  flex: 1;
-  margin-right: 10px;
+  flex: auto;
+  margin-right: auto;
 }
 .form-group input[type="text"],
 .form-group input[type="email"],
-.form-group textarea,
-.form-group input[type="checkbox"] {
+.form-group textarea {
   flex: 2;
   padding: 8px;
+  background-color: #ffffff; /* Set background color to white */
+  color: #000000; /* Ensure the text color is black for readability */
+  border: 1px solid #ccc; /* Light border for inputs */
+  border-radius: 4px; /* Rounded corners */
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
 }
+
 .form-group input[type="checkbox"] {
   transform: scale(1.2);
   margin-right: 10px;
-  accent-color: rgba(247, 197, 50, 0.9);
+  accent-color: rgba(247, 197, 50, 0.9); /* Checkbox accent color */
 }
 
 /* Styles for all text inputs, email inputs, and textareas */
@@ -590,7 +646,7 @@ iframe {
 
 /* Wrapping table inside a scrollable container */
 div.table-container {
-  overflow-x: auto; /* Allows horizontal scrolling */
+  overflow-x: auto; /* horizontal scrolling */
   margin: 0 auto;
   width: 100%;
 }
@@ -816,7 +872,7 @@ img.myImg:hover {
   font-size: 24px;
   border: none;
   background-color: transparent;
-  transform: translateY(-50%);
+  transform: translateY(-50%); /* Center vertically */
   transition: color 0.3s ease;
 }
 
@@ -1229,22 +1285,37 @@ a:after {
  * Star Wars crawl
  **************************/
 
-/* Intro text animation */
-.intro {
+ .intro {
   position: absolute;
   top: 45%;
   left: 50%;
-  z-index: 1;
-  animation: intro 4s ease-out 0.5s;
-  color: rgb(75, 213, 238);
-  font-weight: 400;
-  font-size: 500%;
-  opacity: 0;
   transform: translateX(-50%);
-  width: 100%;
-  text-align: center;
-  padding: 0 10px; /* Add slight padding for larger screens */
+  width: 80%; /* Constrain width to keep content readable */
+  max-width: 1200px;
+  text-align: left; /* Left-align text */
+  font-family: "Roboto", sans-serif;
+  font-size: 500%;
+  font-weight: 400;
+  opacity: 0;
+  color: rgb(75, 213, 238);
+  padding: 0 10px;
+  animation: intro 4s ease-out 0.5s;
 }
+
+@media (max-width: 768px) {
+  .intro {
+    font-size: 300%;
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .intro {
+    font-size: 200%;
+    width: 95%;
+  }
+}
+
 
 @keyframes intro {
   0% {
@@ -1258,21 +1329,6 @@ a:after {
   }
   100% {
     opacity: 0;
-  }
-}
-
-/* Responsive design for smaller screens */
-@media (max-width: 768px) {
-  .intro {
-    font-size: 300%;
-    padding: 0 20px;
-  }
-}
-
-@media (max-width: 480px) {
-  .intro {
-    font-size: 200%;
-    padding: 0 15px;
   }
 }
 
@@ -1305,21 +1361,60 @@ a:after {
   }
 }
 
+@media (max-width: 768px) {
+  .logo object {
+    width: 150px;
+  }
+
+  .logo {
+    height: 50vh;
+  }
+
+  @keyframes logo {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0.3);
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .logo object {
+    width: 100px;
+  }
+
+  .logo {
+    height: 40vh;
+  }
+
+  @keyframes logo {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0.5);
+    }
+  }
+}
+
+
 /* Scrolling Text */
 #board {
   font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
-  transform: perspective(300px) rotateX(25deg);
+  transform: perspective(500px) rotateX(45deg); /* Increased angle for more vertical tilt */
   transform-origin: 50% 100%;
   text-align: justify;
   position: absolute;
-  margin-left: -9em;
+  left: 50%;
+  transform: translateX(-50%) perspective(500px) rotateX(40deg); /* Center text horizontally */
   font-weight: bold;
   overflow: hidden;
   font-size: 350%;
   height: 50em;
-  width: 18em;
+  width: 22em; /* Increased width */
   bottom: 0;
-  left: 50%;
   opacity: 0;
   animation: crawl-appear 0.5s ease-out 14s forwards;
 }

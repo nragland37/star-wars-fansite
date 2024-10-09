@@ -1,18 +1,28 @@
 function applyParallaxEffect() {
-    // Check if the screen width is less than or equal to 768 pixels
-    // ONLY ativate for mobile devices
-    // It's a cheeky workaround to get the parallax effect to work on mobile devices
     if (window.innerWidth <= 768) {
         document.addEventListener('DOMContentLoaded', function () {
-            window.addEventListener('scroll', function () {
-                var scrollPosition = window.pageYOffset;
+            let lastKnownScrollPosition = 0;
+            let ticking = false;
+
+            function updateBackgroundPosition() {
                 var bgElement = document.querySelector('.header-img');
                 if (bgElement) {
-                    bgElement.style.backgroundPositionY = scrollPosition * 0.5 + 'px';
+                    bgElement.style.backgroundPositionY = (lastKnownScrollPosition * 0.5) + 'px';
+                }
+            }
+
+            window.addEventListener('scroll', function () {
+                lastKnownScrollPosition = window.scrollY;
+                if (!ticking) {
+                    window.requestAnimationFrame(function () {
+                        updateBackgroundPosition();
+                        ticking = false;
+                    });
+                    ticking = true;
                 }
             });
         });
     }
 }
 
-applyParallaxEffect(); 
+applyParallaxEffect(); // Activate the effect
