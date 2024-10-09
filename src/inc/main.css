@@ -13,9 +13,15 @@ h1 {
 h2 {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
+  font-size: 40px;
 }
 
-h3,
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  letter-spacing: 3px;
+}
 h4 {
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
@@ -168,10 +174,14 @@ p {
  * Title Backgrounds
  **************************/
 
+/**************************
+ * Title Backgrounds
+ **************************/
+
  div.header-img {
   background-image: url("images/home_background.jpeg");
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: fixed; /* Maintain fixed background */
   background-size: cover;
   position: relative;
   color: #ffffff;
@@ -185,17 +195,17 @@ p {
 
 @media (max-width: 768px) {
   div.header-img {
-    background-attachment: scroll;
     height: 50vh;
     background-position: center center;
-    background-size: cover;  
+    background-size: cover;
+    /* background-attachment: scroll; */
   }
 }
 
 @media (max-width: 576px) {
   div.header-img {
     height: 40vh;
-    background-position: center center;  /* Ensuring the image remains centered */
+    background-position: center center;
   }
 }
 
@@ -996,12 +1006,14 @@ footer {
   background-color: #ffffff;
   color: #0d0d0d;
   font-weight: bold;
+  font-size: 16px;
   overflow: auto;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 20px;
 }
 
 .footer-a:hover:after {
@@ -1021,7 +1033,7 @@ footer {
 }
 
 .footer-c {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .footer-c:hover:after {
@@ -1044,12 +1056,35 @@ div.footer-space {
   letter-spacing: 3px;
 }
 
-/* Responsive Footer */
 @media (max-width: 768px) {
   footer {
-    padding: 10px;
+    padding: 20px;
     text-align: center;
     flex-direction: column;
+    font-size: 18px;
+  }
+
+  .footer-c {
+    font-size: 16px;
+  }
+
+  div.footer-space {
+    letter-spacing: 2px;
+  }
+}
+
+@media (max-width: 480px) {
+  footer {
+    padding: 15px;
+    font-size: 17px;
+  }
+
+  .footer-c {
+    font-size: 15px;
+  }
+
+  div.footer-space {
+    letter-spacing: 1px;
   }
 }
 
