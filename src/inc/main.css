@@ -174,10 +174,6 @@ p {
  * Title Backgrounds
  **************************/
 
-/**************************
- * Title Backgrounds
- **************************/
-
  div.header-img {
   background-image: url("images/home_background.jpeg");
   background-repeat: no-repeat;
@@ -230,7 +226,7 @@ div.content {
   color: #ffffff;
   box-shadow: white 0 0 75px;
   overflow: hidden;
-  opacity: 0.85; /* Slightly transparent */
+  opacity: 0.90; /* Slightly transparent */
 }
 
 @media (max-width: 1200px) {
@@ -444,7 +440,7 @@ div.space {
  **************************/
 body {
   background-image: url("images/star_wars_hyperspace_travel.png");
-  background-size: 475px 475px;
+  background-size: auto;
   background-position: center;
   background-repeat: repeat;
   background-attachment: scroll;
@@ -782,7 +778,7 @@ img.myImg {
 }
 
 img.myImg:hover {
-  opacity: 0.6;
+  opacity: 0.7;
   transform: scale(1.05); /* Subtle zoom effect on hover */
 }
 
@@ -1351,7 +1347,6 @@ a:after {
   }
 }
 
-
 @keyframes intro {
   0% {
     opacity: 0;
@@ -1434,11 +1429,10 @@ a:after {
   }
 }
 
-
-/* Scrolling Text */
+/* scrolling text */
 #board {
   font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
-  transform: perspective(500px) rotateX(45deg); /* Increased angle for more vertical tilt */
+  transform: perspective(500px) rotateX(20deg); /* Increased angle for more vertical tilt */
   transform-origin: 50% 100%;
   text-align: justify;
   position: absolute;
@@ -1448,11 +1442,32 @@ a:after {
   overflow: hidden;
   font-size: 350%;
   height: 50em;
-  width: 22em; /* Increased width */
+  width: 17em;
   bottom: 0;
   opacity: 0;
   animation: crawl-appear 0.5s ease-out 14s forwards;
 }
+
+/* Responsive design: medium screens */
+@media (max-width: 768px) {
+  #board {
+    font-size: 250%;
+    left: 50%;
+    transform: translateX(-50%) perspective(500px) rotateX(40deg);
+    bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  #board {
+    font-size: 200%;
+    width: 14em;
+    left: 50%;
+    transform: translateX(-50%) perspective(500px) rotateX(40deg);
+    bottom: 20px;
+  }
+}
+
 
 #content {
   animation: scroll 70s linear 14s;
