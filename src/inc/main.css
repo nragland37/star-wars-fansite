@@ -134,7 +134,7 @@ div.indentation {
 
 @media (max-width: 768px) {
   div.header-img {
-    background-attachment: scroll; /* Change to scroll to fix iOS issues */
+    background-attachment: scroll;
     height: 50vh;
     background-position: center center;
   }
@@ -385,6 +385,12 @@ body {
   background-attachment: scroll;
   background-color: #000000;
   margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  body {
+    background-size: 50px 50px;
+  }
 }
 
 div.body_footer {
