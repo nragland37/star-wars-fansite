@@ -171,17 +171,15 @@ p {
 
 /**************************
  * Title Backgrounds
- **************************/
+  **************************/
 
- /**************************
+/**************************
  * Title Backgrounds
  **************************/
-
-div.header-img {
+ div.header-img {
   background-image: url("images/home_background.jpeg");
   background-repeat: no-repeat;
-  background-attachment: fixed; /* Desktop parallax */
-  background-size: cover;
+  background-size: cover; /* Ensure it covers the entire area */
   position: relative;
   color: #ffffff;
   height: 95vh;
@@ -190,23 +188,24 @@ div.header-img {
   align-items: center;
   justify-content: center;
   background-position: center center;
+  background-attachment: fixed; /* Works for desktops */
 }
 
+/* Mobile-specific background adjustments */
 @media (max-width: 768px) {
   div.header-img {
     background-attachment: scroll; /* Allow scrolling on mobile */
     height: 50vh;
-    background-position: center center;
-    background-size: cover;
+    background-position: center top; /* Ensure image is aligned from the top */
+    background-size: cover; /* Ensure it fills the width */
   }
 }
 
 @media (max-width: 576px) {
   div.header-img {
-    background-attachment: scroll;
     height: 40vh;
-    background-position: center center;
-    background-size: cover;
+    background-position: center top;
+    background-size: cover; /* Ensure it covers the entire area on small devices */
   }
 }
 
@@ -1325,9 +1324,9 @@ a:after {
   top: 45%;
   left: 50%;
   transform: translateX(-50%);
-  width: 80%; /* Constrain width to keep content readable */
+  width: 80%;
   max-width: 1200px;
-  text-align: left; /* Left-align text */
+  text-align: left;
   font-family: "Roboto", sans-serif;
   font-size: 500%;
   font-weight: 400;
@@ -1335,6 +1334,10 @@ a:after {
   color: rgb(75, 213, 238);
   padding: 0 10px;
   animation: intro 4s ease-out 0.5s;
+  display: flex; /* Flexbox for centering */
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto; /* Ensure horizontal centering */
 }
 
 @media (max-width: 768px) {
@@ -1433,15 +1436,15 @@ a:after {
   }
 }
 
-/* scrolling text */
+/* Scrolling Text */
 #board {
   font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
-  transform: perspective(500px) rotateX(20deg); /* Increased angle for more vertical tilt */
+  transform: perspective(500px) rotateX(20deg);
   transform-origin: 50% 100%;
   text-align: justify;
   position: absolute;
   left: 50%;
-  transform: translateX(-50%) perspective(500px) rotateX(40deg); /* Center text horizontally */
+  transform: translateX(-50%) perspective(500px) rotateX(40deg);
   font-weight: bold;
   overflow: hidden;
   font-size: 350%;
@@ -1452,7 +1455,6 @@ a:after {
   animation: crawl-appear 0.5s ease-out 14s forwards;
 }
 
-/* Responsive design: medium screens */
 @media (max-width: 768px) {
   #board {
     font-size: 250%;
@@ -1471,7 +1473,6 @@ a:after {
     bottom: 20px;
   }
 }
-
 
 #content {
   animation: scroll 70s linear 14s;
@@ -1513,7 +1514,6 @@ a:after {
   z-index: 1;
 }
 
-/* Responsive design: smaller screens */
 @media (max-width: 768px) {
   .intro {
     font-size: 200%;
@@ -1534,7 +1534,6 @@ a:after {
   }
 }
 
-/* Responsive design: smallest screens */
 @media (max-width: 480px) {
   .intro {
     font-size: 150%;
