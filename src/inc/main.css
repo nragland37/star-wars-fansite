@@ -115,7 +115,7 @@ div.indentation {
  * Title Backgrounds
  **************************/
 
-div.header-img {
+ div.header-img {
   background-image: url("images/home_background.jpeg");
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -130,23 +130,22 @@ div.header-img {
   background-position: center top;
 }
 
-/* Responsive title background */
 @media (max-width: 768px) {
   div.header-img {
-    background-size: contain;
+    background-size: cover;  /* Consistent cover style for better background handling */
     background-position: center center;
-    background-attachment: scroll;
+    background-attachment: scroll;  /* Change to scroll to avoid fixed background issues on iOS */
     height: 50vh;
   }
 }
 
 @media (max-width: 576px) {
   div.header-img {
-    background-size: cover;
-    height: 40vh;
-    background-position: center;
+    height: 40vh;  /* Slightly reduced height for smaller screens */
+    background-position: center;  /* Ensures that the center of the image is always visible */
   }
 }
+
 
 div.movieTitle {
   font-style: italic;
