@@ -177,8 +177,8 @@ p {
   background-image: url("images/home_background.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center top;
-  background-attachment: fixed;
+  background-position: center;
+  background-attachment: scroll;
   height: 95vh;
   width: 100%;
   display: flex;
