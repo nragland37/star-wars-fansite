@@ -1380,7 +1380,6 @@ a:after {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 70vh;
   animation: logo 7s ease-out 7s forwards;
   opacity: 0;
   overflow: hidden;
@@ -1410,10 +1409,6 @@ a:after {
     width: 150px;
   }
 
-  .logo {
-    height: 50vh;
-  }
-
   @keyframes logo {
     0% {
       transform: scale(1);
@@ -1427,10 +1422,6 @@ a:after {
 @media (max-width: 480px) {
   .logo object {
     width: 100px;
-  }
-
-  .logo {
-    height: 40vh;
   }
 
   @keyframes logo {
