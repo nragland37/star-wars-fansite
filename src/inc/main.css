@@ -129,22 +129,26 @@ div.indentation {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-position: center top;
+  background-position: center top;  /* Optimized for larger screens */
 }
 
 @media (max-width: 768px) {
   div.header-img {
     background-attachment: scroll;
     height: 50vh;
-    background-position: center center;
+    background-position: center center;  /* Center for better focus in middle devices */
+    background-size: cover;  /* Maintain cover to ensure the image covers the area well */
   }
 }
 
 @media (max-width: 576px) {
   div.header-img {
     height: 40vh;
+    background-position: center center;  /* Ensuring the image remains centered */
+    background-size: contain;  /* Optional: Switch to contain if the image looks cut off */
   }
 }
+
 
 div.movieTitle {
   font-style: italic;
@@ -1024,6 +1028,7 @@ li {
   font-size: 17px;
   float: right;
   margin: 10px 0 0 0;
+  z-index: 1000; /* Make sure this is higher than other page elements */
 }
 
 li a,
