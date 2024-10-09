@@ -67,6 +67,8 @@ div.indentation {
 #page-container {
   position: relative;
   min-height: 100vh;
+  overflow: hidden;
+  z-index: 1;
 }
 
 #content-wrap {
@@ -117,21 +119,24 @@ div.indentation {
 
  div.header-img {
   background-image: url("images/home_background.jpeg");
-  background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
-  background-attachment: scroll; /* Consistently use scroll to prevent any fixed background issues */
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  color: #ffffff;
   height: 95vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ffffff;
+  background-position: center top;
 }
 
 @media (max-width: 768px) {
   div.header-img {
+    background-attachment: scroll; /* Change to scroll to fix iOS issues */
     height: 50vh;
+    background-position: center center;
   }
 }
 
@@ -140,7 +145,6 @@ div.indentation {
     height: 40vh;
   }
 }
-
 
 div.movieTitle {
   font-style: italic;
@@ -214,9 +218,9 @@ div.space {
 .long_time_ago_img {
   display: block;
   padding: 10px 0;
-  height: 60px; 
+  height: 60px;
   width: 100%;
-  max-width: 320px; 
+  max-width: 320px;
   margin: 0 auto;
 }
 
@@ -374,11 +378,11 @@ div.space {
  * Body
  **************************/
 
- body {
+body {
   background-image: url("images/star_wars_hyperspace_travel.png");
-  background-size: cover;
+  background-size: fixed;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-attachment: scroll; /* Switch to scroll to prevent sliding effects */
   background-color: #000000;
   margin: 0 auto;
@@ -393,7 +397,7 @@ div.body_footer {
  * Forms 
  **************************/
 
- form {
+form {
   font-family: "Open Sans", sans-serif;
   margin: 0 auto;
   padding: 0;
@@ -493,7 +497,8 @@ input[type="reset"]:hover {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  form, .form-group {
+  form,
+  .form-group {
     width: 90%;
   }
   .form-group {
@@ -644,7 +649,7 @@ tr:nth-child(even) {
 }
 
 .even-a:hover {
-  color:rgba(247, 197, 50, 0.9);
+  color: rgba(247, 197, 50, 0.9);
   right: 0;
   text-decoration: none;
 }
@@ -676,8 +681,8 @@ tr:nth-child(even) {
 /**************************
  * Image Gallery
  **************************/
- 
- .row {
+
+.row {
   display: flex;
   flex-wrap: wrap;
   padding: 0 70px;
@@ -733,7 +738,7 @@ img.myImg:hover {
   top: 0;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
-  background-color: rgba(0, 0, 0, 0.9); 
+  background-color: rgba(0, 0, 0, 0.9);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -744,9 +749,9 @@ img.myImg:hover {
   display: block;
   width: 80%;
   max-width: 900px;
-  max-height: 80vh; 
-  object-fit: contain; 
-  animation: zoom 0.6s ease; 
+  max-height: 80vh;
+  object-fit: contain;
+  animation: zoom 0.6s ease;
   padding-top: 100px;
   margin: auto;
   overflow: hidden;
@@ -791,7 +796,8 @@ img.myImg:hover {
 }
 
 /* Navigation Arrows */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -801,12 +807,13 @@ img.myImg:hover {
   font-size: 24px;
   border: none;
   background-color: transparent;
-  transform: translateY(-50%); 
+  transform: translateY(-50%);
   transition: color 0.3s ease;
 }
 
-.prev:hover, .next:hover {
-  color: rgba(247, 197, 50, 0.9); 
+.prev:hover,
+.next:hover {
+  color: rgba(247, 197, 50, 0.9);
 }
 
 .prev {
@@ -820,22 +827,23 @@ img.myImg:hover {
 /* Media Queries for responsiveness */
 @media only screen and (max-width: 700px) {
   .modal-content {
-    width: 100%; 
+    width: 100%;
     height: auto;
     max-width: 100%;
   }
-  
+
   #caption {
     width: 90%;
     font-size: 16px;
   }
-  
+
   .close {
     font-size: 30px;
     right: 20px;
   }
-  
-  .prev, .next {
+
+  .prev,
+  .next {
     font-size: 20px;
   }
 }
@@ -1318,7 +1326,6 @@ a:after {
   text-align: center;
   color: rgba(247, 197, 50, 0.9);
 }
-
 
 @keyframes scroll {
   0% {
