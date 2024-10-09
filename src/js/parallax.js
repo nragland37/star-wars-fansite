@@ -1,11 +1,15 @@
 function applyParallaxEffect() {
-    if (window.innerWidth <= 768) {
+    const isMobile = window.innerWidth <= 768;
+    const bgElement = document.querySelector('.header-img');
+
+    if (!bgElement) return;
+
+    if (isMobile) {
         document.addEventListener('DOMContentLoaded', function () {
             let lastKnownScrollPosition = 0;
             let ticking = false;
 
             function updateBackgroundPosition() {
-                var bgElement = document.querySelector('.header-img');
                 if (bgElement) {
                     bgElement.style.backgroundPositionY = (lastKnownScrollPosition * 0.5) + 'px';
                 }
@@ -13,6 +17,7 @@ function applyParallaxEffect() {
 
             window.addEventListener('scroll', function () {
                 lastKnownScrollPosition = window.scrollY;
+
                 if (!ticking) {
                     window.requestAnimationFrame(function () {
                         updateBackgroundPosition();
@@ -22,7 +27,10 @@ function applyParallaxEffect() {
                 }
             });
         });
+    } else {
+        // Ensure background-attachment remains fixed on larger screens
+        bgElement.style.backgroundAttachment = 'fixed';
     }
 }
 
-applyParallaxEffect(); // Activate the effect
+applyParallaxEffect(); 

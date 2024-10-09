@@ -130,7 +130,6 @@ p {
 
 #content-wrap {
   padding: 20px 0;
-  opacity: 0.95 !important;
 }
 
 #section {
@@ -138,7 +137,7 @@ p {
   max-width: 1300px;
   margin: 100px auto;
   padding: 20px;
-  opacity: 0.9;
+  opacity: 0.95;
   background-color: transparent;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -174,10 +173,14 @@ p {
  * Title Backgrounds
  **************************/
 
- div.header-img {
+ /**************************
+ * Title Backgrounds
+ **************************/
+
+div.header-img {
   background-image: url("images/home_background.jpeg");
   background-repeat: no-repeat;
-  background-attachment: fixed; /* Maintain fixed background */
+  background-attachment: fixed; /* Desktop parallax */
   background-size: cover;
   position: relative;
   color: #ffffff;
@@ -191,20 +194,21 @@ p {
 
 @media (max-width: 768px) {
   div.header-img {
+    background-attachment: scroll; /* Allow scrolling on mobile */
     height: 50vh;
     background-position: center center;
     background-size: cover;
-    /* background-attachment: scroll; */
   }
 }
 
 @media (max-width: 576px) {
   div.header-img {
+    background-attachment: scroll;
     height: 40vh;
     background-position: center center;
+    background-size: cover;
   }
 }
-
 
 div.movieTitle {
   font-style: italic;
@@ -226,7 +230,7 @@ div.content {
   color: #ffffff;
   box-shadow: white 0 0 75px;
   overflow: hidden;
-  opacity: 0.90; /* Slightly transparent */
+  opacity: 0.95; /* Slightly transparent */
 }
 
 @media (max-width: 1200px) {
@@ -440,7 +444,7 @@ div.space {
  **************************/
 body {
   background-image: url("images/star_wars_hyperspace_travel.png");
-  background-size: auto;
+  background-size: 350px 350px;
   background-position: center;
   background-repeat: repeat;
   background-attachment: scroll;
