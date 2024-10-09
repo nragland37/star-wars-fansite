@@ -117,24 +117,21 @@ div.indentation {
 
  div.header-img {
   background-image: url("images/home_background.jpeg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   background-size: cover;
-  position: relative;
-  color: #ffffff;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll; /* Consistently use scroll to prevent any fixed background issues */
   height: 95vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-position: center top;
+  color: #ffffff;
 }
 
 @media (max-width: 768px) {
   div.header-img {
-    background-attachment: scroll; /* Change to scroll to fix iOS issues */
     height: 50vh;
-    background-position: center center;
   }
 }
 
@@ -379,19 +376,12 @@ div.space {
 
  body {
   background-image: url("images/star_wars_hyperspace_travel.png");
-  background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll; /* Switch to scroll to prevent sliding effects */
   background-color: #000000;
   margin: 0 auto;
-}
-
-/* Adjustments for smaller screens to prevent background-attachment issues (common on iOS) */
-@media (max-width: 768px) {
-  body {
-    background-attachment: scroll; /* Change attachment to scroll for better performance */
-  }
 }
 
 div.body_footer {
