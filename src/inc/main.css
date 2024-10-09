@@ -94,11 +94,11 @@ p {
 
 .headerBio {
   font-family: "Roboto", sans-serif;
-  font-weight: bold;
   text-align: center;
-  letter-spacing: 1px;
+  letter-spacing: 3px;
   padding-left: 100px;
   padding-right: 100px;
+  line-height: 1.2;
 }
 
 @media (max-width: 768px) {
