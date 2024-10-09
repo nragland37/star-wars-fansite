@@ -624,10 +624,10 @@ input[type="reset"]:hover {
 }
 
 /**************************
- * Audio
+ * Audio Player
  **************************/
 
- .audio-player {
+.audio-player {
   text-align: center;
   margin-top: 30px;
 }
@@ -646,7 +646,6 @@ input[type="reset"]:hover {
 .play-button:hover {
   background-color: #555;
 }
-
 
 /**************************center
  * Iframes
