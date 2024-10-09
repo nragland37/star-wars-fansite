@@ -627,13 +627,26 @@ input[type="reset"]:hover {
  * Audio
  **************************/
 
-audio {
-  padding-left: 100px;
+ .audio-player {
+  text-align: center;
   margin-top: 30px;
-  margin-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
 }
+
+.play-button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+}
+
+.play-button:hover {
+  background-color: #555;
+}
+
 
 /**************************center
  * Iframes
@@ -1371,6 +1384,7 @@ a:after {
   height: 70vh;
   animation: logo 7s ease-out 7s forwards;
   opacity: 0;
+  overflow: hidden;
 }
 
 .logo object {
