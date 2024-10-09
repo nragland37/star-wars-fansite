@@ -88,6 +88,20 @@ p {
   }
 }
 
+.quote {
+  margin: 20px auto;
+  padding: 10px;
+  max-width: 600px;
+  color: white;
+  text-align: center;
+}
+
+.quote p {
+  font-size: 24px;
+  margin: 5px 0;
+  line-height: 1.5;
+}
+
 /**************************
  * Header Bio
  **************************/
