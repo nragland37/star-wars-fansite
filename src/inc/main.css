@@ -185,29 +185,14 @@ p {
   justify-content: center;
   position: relative;
   color: #ffffff;
-}
-
-/* Mobile-specific adjustments */
-@media (max-width: 768px) {
-  div.header-img {
-    background-position: top center; /* Ensure image is aligned from the top */
-    background-size: cover;
-    height: 50vh;
-  }
-}
-
-@media (max-width: 576px) {
-  div.header-img {
-    background-position: top center;
-    height: 40vh;
-    background-size: cover;
-  }
+  background-attachment: fixed; /* Default for desktop */
 }
 
 div.movieTitle {
   font-style: italic;
   text-align: center;
 }
+
 
 /**************************
  * Content
