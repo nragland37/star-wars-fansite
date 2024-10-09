@@ -177,13 +177,12 @@ p {
   background-image: url("images/home_background.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: center top;
   height: 95vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-attachment: fixed;
   position: relative;
   color: #ffffff;
 }
