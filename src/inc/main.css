@@ -171,41 +171,39 @@ p {
 
 /**************************
  * Title Backgrounds
-  **************************/
-
-/**************************
- * Title Backgrounds
  **************************/
+
  div.header-img {
   background-image: url("images/home_background.jpeg");
   background-repeat: no-repeat;
-  background-size: cover; /* Ensure it covers the entire area */
-  position: relative;
-  color: #ffffff;
+  background-size: cover;
+  background-position: center center;
   height: 95vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-position: center center;
-  background-attachment: fixed; /* Works for desktops */
+  background-attachment: fixed;
+  position: relative;
+  color: #ffffff;
 }
 
-/* Mobile-specific background adjustments */
+/* Mobile-specific adjustments */
 @media (max-width: 768px) {
   div.header-img {
     background-attachment: scroll; /* Allow scrolling on mobile */
+    background-position: top center; /* Ensure image is aligned from the top */
+    background-size: cover;
     height: 50vh;
-    background-position: center top; /* Ensure image is aligned from the top */
-    background-size: cover; /* Ensure it fills the width */
   }
 }
 
 @media (max-width: 576px) {
   div.header-img {
+    background-attachment: scroll;
+    background-position: top center;
     height: 40vh;
-    background-position: center top;
-    background-size: cover; /* Ensure it covers the entire area on small devices */
+    background-size: cover;
   }
 }
 
