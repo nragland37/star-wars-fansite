@@ -1382,6 +1382,7 @@ a:after {
   justify-content: center;
   align-items: center;
   height: 70vh;
+  transform: translateY(-50%);  /* Center vertically */
   animation: logo 7s ease-out 7s forwards;
   opacity: 0;
   overflow: hidden;
@@ -1447,12 +1448,11 @@ a:after {
 /* Scrolling Text */
 #board {
   font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
-  transform: perspective(500px) rotateX(20deg);
   transform-origin: 50% 100%;
   text-align: justify;
   position: absolute;
   left: 50%;
-  transform: translateX(-50%) perspective(500px) rotateX(40deg);
+  transform: translateX(-50%) perspective(600px) rotateX(30deg);
   font-weight: bold;
   overflow: hidden;
   font-size: 350%;
@@ -1467,7 +1467,7 @@ a:after {
   #board {
     font-size: 250%;
     left: 50%;
-    transform: translateX(-50%) perspective(500px) rotateX(40deg);
+    transform: translateX(-50%) perspective(600px) rotateX(30deg);
     bottom: 10px;
   }
 }
@@ -1477,7 +1477,7 @@ a:after {
     font-size: 200%;
     width: 14em;
     left: 50%;
-    transform: translateX(-50%) perspective(500px) rotateX(40deg);
+    transform: translateX(-50%) perspective(600px) rotateX(30deg);
     bottom: 20px;
   }
 }
