@@ -1376,16 +1376,23 @@ a:after {
   }
 }
 
-/* Logo animation */
+/* Parent container for logo */
+.parent-logo {
+  display: flex;
+  align-items: center;  
+  justify-content: center; 
+  height: 100vh;  /* Full viewport height to encapsulate logo */
+  overflow: hidden;  /* Prevents overflow */
+}
+
+/* Logo animation and styling */
 .logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 70vh;
-  transform: translateY(-50%);  /* Center vertically */
-  animation: logo 7s ease-out 7s forwards;
-  opacity: 0;
-  overflow: hidden;
+  margin-top: -30vh;  /* Adjusts logo position */
+  animation: logo 7s ease-out 7s forwards; 
+  opacity: 0; 
 }
 
 .logo object {
