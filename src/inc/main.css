@@ -1376,27 +1376,19 @@ a:after {
   }
 }
 
-/* Parent container for logo */
-.parent-logo {
-  display: flex;
-  align-items: center;  
-  justify-content: center; 
-  height: 100vh;  /* Full viewport height to encapsulate logo */
-  overflow: hidden;  /* Prevents overflow */
-}
-
 /* Logo animation and styling */
 .logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -30vh;  /* Adjusts logo position */
-  animation: logo 7s ease-out 7s forwards; 
-  opacity: 0; 
+  position: relative; 
+  top: 250px;
+  animation: logo 7s ease-out 7s forwards;
+  opacity: 0;
 }
 
 .logo object {
-  width: 300px;
+  width: 300px; /* Fixed width for desktop */
   height: auto;
 }
 
@@ -1420,7 +1412,7 @@ a:after {
   }
 
   .logo {
-    height: 50vh;
+    top: -30px; 
   }
 
   @keyframes logo {
@@ -1439,7 +1431,7 @@ a:after {
   }
 
   .logo {
-    height: 40vh;
+    top: -20px; 
   }
 
   @keyframes logo {
