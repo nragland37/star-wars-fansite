@@ -22,8 +22,8 @@
 
 ## About This Project
 
-Take a look at where my coding journey started: a Star Wars fansite. This project marked my first real use of coding skills, developed during my first semester in the Computer Science program at university.
+Take a look at where my coding journey began: a Star Wars fansite and my very first GitHub repo. I built this project during my first semester in the Computer Science program at my university.
 
-The site was initially crafted using Notepad++, and right after, I discovered VS Code — complete with a button to instantly format everything. Imagine manually aligning thousands of lines of HTML & CSS, only to find out such a shortcut existed. It was a tedious task, but I accidentally became a pro at HTML spacing before discovering there was an easier way!
+The site started with Notepad++, and shortly after, a friend introduced me to VS Code — complete with a magic button that formatted everything in an instant. Before that, I had been manually aligning thousands of lines of HTML and CSS . . .
 
-This project is more than just code on a screen; it's a pixelated slice of my early coding days—a time when every semicolon was a tiny victory and every closing tag a high five. It was my first repo on GitHub, serving as a reminder of where I started and how far I've come.
+This project is more than just code; it’s a reminder of my early days as a developer!
