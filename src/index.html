@@ -17,14 +17,33 @@
       .sw-img {
         border: 0;
         display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 250px;
-        margin-bottom: auto;
+        margin: 300px auto;
+        padding: 20px;
         border-radius: 20px;
         box-shadow: white 0px 0px 100px;
         border: white 1px solid;
         opacity: 0.85;
+        max-width: 90%;
+        height: auto;
+        box-sizing: border-box;
+      }
+
+      @media (max-width: 768px) {
+        .sw-img {
+          margin: 30px auto;
+          padding: 15px;
+          border-radius: 15px;
+          box-shadow: white 0px 0px 50px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .sw-img {
+          margin: 20px auto;
+          padding: 10px;
+          border-radius: 10px;
+          box-shadow: white 0px 0px 25px;
+        }
       }
 
       div.header-img {

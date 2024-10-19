@@ -8,6 +8,7 @@ h1 {
   font-weight: bolder;
   font-size: 55px;
   letter-spacing: 5px;
+  padding: 20px;
 }
 
 h2 {
@@ -22,6 +23,7 @@ h3 {
   font-size: 30px;
   letter-spacing: 3px;
 }
+
 h4 {
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
@@ -36,20 +38,19 @@ p {
 
 @media (max-width: 768px) {
   h1 {
-    font-size: 48px; /* Slightly larger font for mobile */
+    font-size: 48px;
   }
 
   h2 {
-    font-size: 36px; /* Larger h2 for mobile */
+    font-size: 36px;
   }
 
-  h3,
-  h4 {
-    font-size: 28px; /* Adjusted for readability on mobile */
+  h3, h4 {
+    font-size: 28px;
   }
 
   p {
-    font-size: 17px; /* Increased font size for better readability */
+    font-size: 17px;
     line-height: 1.6;
     margin-bottom: 1.4em;
   }
@@ -63,20 +64,19 @@ p {
 
 @media (max-width: 480px) {
   h1 {
-    font-size: 40px; /* Larger font size for very small devices */
+    font-size: 40px;
   }
 
   h2 {
     font-size: 32px;
   }
 
-  h3,
-  h4 {
+  h3, h4 {
     font-size: 24px;
   }
 
   p {
-    font-size: 16px; /* Increase mobile font size for readability */
+    font-size: 16px;
     line-height: 1.6;
     margin-bottom: 1.3em;
   }
@@ -105,7 +105,6 @@ p {
 /**************************
  * Header Bio
  **************************/
-
 .headerBio {
   font-family: "Roboto", sans-serif;
   text-align: center;
@@ -117,7 +116,7 @@ p {
 
 @media (max-width: 768px) {
   .headerBio {
-    font-size: 20px; /* Adjust font size for mobile */
+    font-size: 20px;
     padding-left: 50px;
     padding-right: 50px;
   }
@@ -125,7 +124,7 @@ p {
 
 @media (max-width: 480px) {
   .headerBio {
-    font-size: 18px; /* Further adjustments for small devices */
+    font-size: 18px;
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -134,7 +133,6 @@ p {
 /**************************
  * Layout
  **************************/
-
 #page-container {
   position: relative;
   min-height: 100vh;
@@ -186,8 +184,7 @@ p {
 /**************************
  * Title Backgrounds
  **************************/
-
- div.header-img {
+div.header-img {
   background-image: url("images/home_background.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -199,7 +196,7 @@ p {
   justify-content: center;
   position: relative;
   color: #ffffff;
-  background-attachment: fixed; /* Default for desktop */
+  background-attachment: fixed;
 }
 
 div.movieTitle {
@@ -207,11 +204,40 @@ div.movieTitle {
   text-align: center;
 }
 
+@media (max-width: 1024px) {
+  div.header-img {
+    height: 80vh;
+    background-attachment: scroll;
+  }
+}
+
+@media (max-width: 768px) {
+  div.header-img {
+    height: 70vh;
+    background-attachment: scroll;
+    padding: 0 20px;
+  }
+
+  div.movieTitle {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  div.header-img {
+    height: 60vh;
+    background-attachment: scroll;
+    padding: 0 10px;
+  }
+
+  div.movieTitle {
+    font-size: 1.2em;
+  }
+}
 
 /**************************
  * Content
  **************************/
-
 div.content {
   width: 90%;
   max-width: 1300px;
@@ -219,11 +245,11 @@ div.content {
   padding: 20px;
   border: 1px solid #222931;
   border-radius: 8px;
-  background-color: rgba(0, 0, 0, 0.95); 
+  background-color: rgba(0, 0, 0, 0.95);
   color: #ffffff;
   box-shadow: white 0 0 75px;
   overflow: hidden;
-  opacity: 0.95; /* Slightly transparent */
+  opacity: 0.95;
 }
 
 @media (max-width: 1200px) {
@@ -272,7 +298,6 @@ div.space {
 /**************************
  * Images
  **************************/
-
 .long_time_ago_img {
   display: block;
   padding: 10px 0;
@@ -282,7 +307,6 @@ div.space {
   margin: 0 auto;
 }
 
-/* Image positioning for left and right floats with border styling */
 .left_img,
 .right_img {
   padding: 5px;
@@ -316,7 +340,6 @@ div.space {
   background-color: #717171;
 }
 
-/* Center dots container */
 .dot-container {
   text-align: center;
   padding-top: 10px;
@@ -346,7 +369,6 @@ div.space {
   opacity: 1;
 }
 
-/* Ensure images cover the container while maintaining aspect ratio */
 .mySlides img {
   width: 100%;
   height: 100%;
@@ -354,7 +376,6 @@ div.space {
   object-position: center;
 }
 
-/* Text overlay (optional) */
 .text {
   font-family: "Roboto", sans-serif;
   letter-spacing: 5px;
@@ -375,7 +396,6 @@ div.space {
   top: 0;
 }
 
-/* Responsive styling for smaller screens */
 @media (max-width: 768px) {
   .slideshow-container {
     height: 250px;
@@ -458,9 +478,8 @@ div.body_footer {
 }
 
 /**************************
- * Forms 
+ * Forms
  **************************/
-
 form {
   font-family: "Open Sans", sans-serif;
   margin: 0 auto;
@@ -474,36 +493,36 @@ form {
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-/* Form layout and alignment */
 .form-group {
   margin-bottom: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .form-group label {
   flex: auto;
   margin-right: auto;
 }
+
 .form-group input[type="text"],
 .form-group input[type="email"],
 .form-group textarea {
   flex: 2;
   padding: 8px;
-  background-color: #ffffff; /* Set background color to white */
-  color: #000000; /* Ensure the text color is black for readability */
-  border: 1px solid #ccc; /* Light border for inputs */
-  border-radius: 4px; /* Rounded corners */
-  box-sizing: border-box; /* Ensure padding doesn't affect width */
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
 .form-group input[type="checkbox"] {
   transform: scale(1.2);
   margin-right: 10px;
-  accent-color: rgba(247, 197, 50, 0.9); /* Checkbox accent color */
+  accent-color: rgba(247, 197, 50, 0.9);
 }
 
-/* Styles for all text inputs, email inputs, and textareas */
 input[type="text"],
 input[type="email"],
 textarea {
@@ -517,7 +536,6 @@ textarea {
   box-sizing: border-box;
 }
 
-/* Fieldset styling */
 fieldset {
   margin-bottom: 1.25rem;
   padding: 1.25rem;
@@ -528,7 +546,6 @@ fieldset {
   box-sizing: border-box;
 }
 
-/* Legend styling */
 legend {
   font-weight: bold;
   font-size: 1.5em;
@@ -537,7 +554,6 @@ legend {
   color: rgba(247, 197, 50, 0.9);
 }
 
-/* Label styling */
 label {
   display: block;
   font-weight: bold;
@@ -545,7 +561,6 @@ label {
   color: #ffffff;
 }
 
-/* Styles for submission buttons */
 input[type="submit"],
 input[type="reset"] {
   padding: 15px 30px;
@@ -559,24 +574,27 @@ input[type="reset"] {
   font-weight: bold;
   transition: background-color 0.3s ease;
 }
+
 input[type="submit"]:hover,
 input[type="reset"]:hover {
   background-color: rgba(255, 221, 87, 0.9);
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   form,
   .form-group {
     width: 90%;
   }
+
   .form-group {
     flex-direction: column;
     align-items: flex-start;
   }
+
   .form-group label {
     margin-bottom: 5px;
   }
+
   input[type="submit"],
   input[type="reset"],
   label {
@@ -591,43 +609,15 @@ input[type="reset"]:hover {
     margin-bottom: 0.5rem;
     font-size: 0.9rem;
   }
+
   .form-group {
     margin-bottom: 15px;
-  }
-}
-
-/* Responsive space for forms */
-.space,
-.space_message,
-.space_light_dark {
-  display: block;
-  clear: both;
-  width: 100%;
-}
-
-.space {
-  max-width: 35em;
-}
-
-.space_message {
-  max-width: 12.25em;
-}
-
-.space_light_dark {
-  max-width: 12em;
-}
-
-@media (min-width: 768px) {
-  .space_message,
-  .space_light_dark {
-    display: inline-block;
   }
 }
 
 /**************************
  * Audio Player
  **************************/
-
 .audio-player {
   text-align: center;
   margin-top: 30px;
@@ -648,10 +638,9 @@ input[type="reset"]:hover {
   background-color: #555;
 }
 
-/**************************center
+/**************************
  * Iframes
  **************************/
-
 iframe {
   border: 10px;
 }
@@ -659,10 +648,8 @@ iframe {
 /**************************
  * Tables
  **************************/
-
-/* Wrapping table inside a scrollable container */
 div.table-container {
-  overflow-x: auto; /* horizontal scrolling */
+  overflow-x: auto;
   margin: 0 auto;
   width: 100%;
 }
@@ -685,8 +672,7 @@ td {
   font-size: 18px;
 }
 
-td,
-th {
+td, th {
   border: 1px solid white;
   padding: 0.1em 1em;
   text-align: center;
@@ -702,7 +688,6 @@ tr:nth-child(even) {
   color: #000000;
 }
 
-/* Hover effect for odd rows */
 .odd-a {
   color: black;
   letter-spacing: 1px;
@@ -723,7 +708,6 @@ tr:nth-child(even) {
   content: none;
 }
 
-/* Hover effect for even rows */
 .even-a {
   color: white;
   letter-spacing: 1px;
@@ -744,7 +728,6 @@ tr:nth-child(even) {
   content: none;
 }
 
-/* Responsive table */
 @media (max-width: 768px) {
   table {
     width: 100%;
@@ -762,7 +745,6 @@ tr:nth-child(even) {
 /**************************
  * Image Gallery
  **************************/
-
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -789,10 +771,9 @@ img.myImg {
 
 img.myImg:hover {
   opacity: 0.7;
-  transform: scale(1.05); /* Subtle zoom effect on hover */
+  transform: scale(1.05);
 }
 
-/* Responsive adjustments */
 @media screen and (max-width: 800px) {
   .column {
     flex: 50%;
@@ -810,19 +791,18 @@ img.myImg:hover {
 /**************************
  * Modal
  **************************/
-
- .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
+.modal {
+  display: none;
+  position: fixed;
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
+  width: 100%;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.9);
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden; /* Prevent scroll */
+  overflow: hidden;
 }
 
 #caption {
@@ -834,26 +814,25 @@ img.myImg:hover {
   color: #ccc;
   font-size: 20px;
   position: absolute;
-  bottom: 20px; /* Position caption near the bottom */
+  bottom: 20px;
   left: 50%;
-  transform: translateX(-50%); /* Center horizontally */
-  padding: 10px 0; /* Adjust padding to add some space */
+  transform: translateX(-50%);
+  padding: 10px 0;
 }
 
-/* Adjust modal-content for the image to allow space for caption */
 .modal-content {
   display: block;
   width: 80%;
   max-width: 900px;
-  max-height: 80%; /* Reduce max-height to make space for caption */
+  max-height: 80%;
   object-fit: contain;
   animation: zoom 0.6s ease;
   margin: auto;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); /* Center horizontally and vertically */
-  text-align: center; /* Center the image */
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 @keyframes zoom {
@@ -861,6 +840,7 @@ img.myImg:hover {
     transform: scale(0);
     opacity: 0;
   }
+
   100% {
     transform: scale(1);
     opacity: 1;
@@ -879,11 +859,10 @@ img.myImg:hover {
 
 .close:hover,
 .close:focus {
-  color: rgba(247, 197, 50, 0.9); /* Yellow hover color */
+  color: rgba(247, 197, 50, 0.9);
   cursor: pointer;
 }
 
-/* Navigation Arrows */
 .prev,
 .next {
   cursor: pointer;
@@ -892,10 +871,10 @@ img.myImg:hover {
   padding: 16px;
   color: white;
   font-weight: bold;
-  font-size: 45px; /* Make the arrows larger */
+  font-size: 45px;
   border: none;
   background-color: transparent;
-  transform: translateY(-50%); /* Center vertically */
+  transform: translateY(-50%);
   transition: color 0.3s ease;
 }
 
@@ -912,7 +891,6 @@ img.myImg:hover {
   right: 0;
 }
 
-/* Media Queries for responsiveness */
 @media only screen and (max-width: 700px) {
   .modal-content {
     width: 100%;
@@ -930,16 +908,14 @@ img.myImg:hover {
     right: 20px;
   }
 
-  .prev,
-  .next {
-    font-size: 28px; /* Increase the size of arrows on mobile */
+  .prev, .next {
+    font-size: 28px;
   }
 }
 
 /**************************
  * Footer/Social Links
  **************************/
-
 #ul-social {
   list-style-type: none;
   margin: 0;
@@ -965,7 +941,6 @@ img.myImg:hover {
   transition: background-color 0.3s ease;
 }
 
-/* Social media icons hover effect without underline */
 .fa-facebook {
   color: #3b5998;
 }
@@ -1002,7 +977,6 @@ img.myImg:hover {
   color: #ffffff;
 }
 
-/* Disable underline on social media icons */
 .fa:after {
   content: none;
 }
@@ -1010,12 +984,11 @@ img.myImg:hover {
 /**************************
  * Footer
  **************************/
-
 footer {
   bottom: 0;
   width: 100%;
   margin: 0 auto;
-  margin-top: 250px;
+  margin-top: 300px;
   background-color: #ffffff;
   color: #0d0d0d;
   font-weight: bold;
@@ -1104,7 +1077,6 @@ div.footer-space {
 /**************************
  * Navigation/Anchors
  **************************/
-
 .header_left_img {
   float: left;
   margin: 0 0 0 75px;
@@ -1132,7 +1104,7 @@ li {
   font-size: 17px;
   float: right;
   margin: 10px 0 0 0;
-  z-index: 1000; /* Make sure this is higher than other page elements */
+  z-index: 1000;
 }
 
 li a,
@@ -1155,7 +1127,7 @@ li.dropdown {
   color: #ffffff;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1000; /* Make sure this is higher than other page elements */
+  z-index: 1000;
 }
 
 .dropdown-content a {
@@ -1177,7 +1149,6 @@ li.dropdown {
 /**************************
  * Anchor Hover Effects
  **************************/
-
 a {
   font-family: "Roboto", sans-serif;
   letter-spacing: 3px;
@@ -1311,7 +1282,6 @@ a:after {
   transition: right 1.5s cubic-bezier(0, 0.15, 0, 1), border-color 0.5s ease-out;
 }
 
-/* Responsive navbar */
 @media (max-width: 768px) {
   ul {
     text-align: center;
@@ -1329,15 +1299,15 @@ a:after {
     font-size: 15px;
   }
 }
+
 /**************************
  * Star Wars crawl
  **************************/
-
- .intro {
+.intro {
   position: absolute;
   top: 45%;
   left: 50%;
-  transform: translateX(-50%); /* Center horizontally */
+  transform: translateX(-50%);
   width: 80%;
   max-width: 1200px;
   text-align: left;
@@ -1348,10 +1318,10 @@ a:after {
   color: rgb(75, 213, 238);
   padding: 0 10px;
   animation: intro 4s ease-out 0.5s;
-  display: flex; /* Flexbox for centering */
+  display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto; /* Ensure horizontal centering */
+  margin: 0 auto;
 }
 
 @media (max-width: 768px) {
@@ -1372,12 +1342,15 @@ a:after {
   0% {
     opacity: 0;
   }
+
   20% {
     opacity: 1;
   }
+
   80% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
   }
@@ -1388,14 +1361,14 @@ a:after {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative; 
+  position: relative;
   top: 250px;
   animation: logo 7s ease-out 7s forwards;
   opacity: 0;
 }
 
 .logo object {
-  width: 300px; /* Fixed width for desktop */
+  width: 300px;
   height: auto;
 }
 
@@ -1404,9 +1377,11 @@ a:after {
     transform: scale(2.75);
     opacity: 1;
   }
+
   50% {
     opacity: 1;
   }
+
   100% {
     transform: scale(0.1);
     opacity: 0;
@@ -1419,13 +1394,14 @@ a:after {
   }
 
   .logo {
-    top: -30px; 
+    top: -30px;
   }
 
   @keyframes logo {
     0% {
       transform: scale(1);
     }
+
     100% {
       transform: scale(0.3);
     }
@@ -1438,13 +1414,14 @@ a:after {
   }
 
   .logo {
-    top: -20px; 
+    top: -20px;
   }
 
   @keyframes logo {
     0% {
       transform: scale(1);
     }
+
     100% {
       transform: scale(0.5);
     }
@@ -1495,8 +1472,7 @@ a:after {
   top: 100%;
 }
 
-#title,
-#subtitle {
+#title, #subtitle {
   text-align: center;
   color: rgba(247, 197, 50, 0.9);
 }
@@ -1505,6 +1481,7 @@ a:after {
   0% {
     top: 100%;
   }
+
   100% {
     top: -170%;
   }
@@ -1514,6 +1491,7 @@ a:after {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
