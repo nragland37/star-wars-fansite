@@ -1,39 +1,32 @@
 # .github/workflows/deploy.yml
 
-name: Deploy to GitHub Pages
+name: Deploy via gh-pages branch
 
 on:
   push:
-    branches: ["main"]
+    branches: ['main']
   workflow_dispatch:
-
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: true
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deploy.outputs.page_url }}
+
     steps:
-      - name: Checkout
+      - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v2
-
-      - name: Upload site content
-        uses: actions/upload-pages-artifact@v1
+      - name: Set up Node.js (if using a build step)
+        uses: actions/setup-node@v3
         with:
-          path: './'  # or change to 'dist', 'build', etc.
+          node-version: 18
 
-      - name: Deploy to GitHub Pages
-        id: deploy
-        uses: actions/deploy-pages@v1
+      - name: Install dependencies and build
+        run: |
+          npm install
+          npm run build  # or use your actual build command
+
+      - name: Deploy to gh-pages branch
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist  # replace with your output folder (e.g. ./build, ./src)
