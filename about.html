@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>About</title>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300;400;500;700&display=swap"
+    />
+    <link rel="stylesheet" type="text/css" href="inc/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      .noIndent {
+        text-indent: 0;
+      }
+
+      div.header-img {
+        background-image: url("img/flying.png");
+      }
+
+      img.about-img {
+        width: 100vw;
+        height: 700px;
+        object-fit: cover;
+      }
+
+      .mySlides {
+        display: none;
+      }
+
+      .active-slide {
+        display: block;
+      }
+
+      .dot {
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+
+      .active {
+        background-color: #717171;
+      }
+
+      .dot-container {
+        text-align: center;
+        padding-top: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <a id="top"></a>
+
+    <div>
+      <ul>
+        <li>
+          <a href="index.html"
+            ><img
+              class="header_left_img"
+              title="Star Wars Logo"
+              src="img/star_wars_logo.png"
+              alt="Star Wars Logo"
+          /></a>
+        </li>
+        <li><a class="purple-a" href="contact.html">CONTACT</a></li>
+        <li><a class="blue-a" href="about.html">ABOUT</a></li>
+        <li><a class="green-a" href="artwork.html">ARTWORK</a></li>
+        <li class="dropdown">
+          <a class="red-a" href="prequel_trilogy.html" id="dropbtn-prequel"
+            >PREQUEL TRILOGY</a
+          >
+          <div class="dropdown-content">
+            <a class="green-a" href="the_phantom_menace.html"
+              >Episode I: The Phantom Menace</a
+            >
+            <a class="purple-a" href="attack_of_the_clones.html"
+              >Episode II: Attack of the Clones</a
+            >
+            <a class="blue-a" href="revenge_of_the_sith.html"
+              >Episode III: Revenge of the Sith</a
+            >
+          </div>
+        </li>
+        <li class="dropdown">
+          <a class="purple-a" href="orginal_trilogy.html" id="dropbtn-original"
+            >ORIGINAL TRILOGY</a
+          >
+          <div class="dropdown-content">
+            <a class="red-a" href="a_new_hope.html">Episode IV: A New Hope</a>
+            <a class="blue-a" href="the_empire_strikes_back.html"
+              >Episode V: The Empire Strikes Back</a
+            >
+            <a class="green-a" href="return_of_the_jedi.html"
+              >Episode VI: Return of the Jedi</a
+            >
+          </div>
+        </li>
+        <li><a class="blue-a" href="george_lucas.html">GEORGE LUCAS</a></li>
+      </ul>
+    </div>
+
+    <div id="page-container">
+      <div class="header-img">
+        <h1>ABOUT ME</h1>
+      </div>
+
+      <section id="section">
+        <div id="content-wrap">
+          <div class="content">
+            <fieldset>
+              <legend>
+                <h3 class="h3">My Story</h3>
+              </legend>
+              <img
+                class="left_img"
+                title="Selfie"
+                src="img/selfie.jpeg"
+                alt="Selfie"
+                height="317"
+                width="236"
+              />
+              <div class="indentation">
+                <h4 class="noIndent">Hello, I'm Nicholas!</h4>
+                <p>
+                  I'm currently living in St. Louis, Missouri with my girlfriend
+                  of almost 3 years. We stay in a small but nice apartment next
+                  to the Botanical Gardens and Tower Grove park. If you're not
+                  familiar with the area, it's a beautiful part of South City
+                  with amazing events, festivals, weekly food trucks, and
+                  friendly people.
+                </p>
+                <p class="noIndent">As for what I'm up to..</p>
+                <p>
+                  Well, I just graduated in Spring of 2021 from my local
+                  community college, 'STLCC - Meramec' with an associate degree.
+                  I'm also a proud member of Phi Theta Kappa which is the
+                  official national honor society for junior colleges. After
+                  leaving Meramec, I've transferred to 'Webster University' to
+                  pursue a bachelor's degree in Computer Science.
+                </p>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>
+                <h3 class="h3">Why Star Wars?</h3>
+              </legend>
+              <img
+                class="right_img"
+                title="Star Wars Logo"
+                src="img/contact-logo.jpeg"
+                alt="Star Wars Logo"
+                id="left"
+                height="225"
+                width="400"
+              />
+              <div class="indentation">
+                <p>
+                  I think it goes without saying that I’m a huge Star Wars fan,
+                  especially those written by the infamous and legendary,
+                  ‘George Lucas’. I made this website to share my love for the
+                  series and to have a place where like minded people can come
+                  to dig deeper into the Original and Prequel Star Wars saga.
+                </p>
+                <p>
+                  Ever since I can remember, I have been a huge fan of Star
+                  Wars. The day my father pulled me out of school so we could
+                  play hooky and see Star Wars Episode II: Attack of the Clones
+                  on opening day is something I'll never forget. I was very
+                  young, but it's something that I will always hold close to my
+                  heart.
+                </p>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>
+                <h3 class="h3">Hobbies & Interests</h3>
+              </legend>
+              <div class="center">
+                <p>Traveling</p>
+                <p>Hiking</p>
+                <p>Camping</p>
+                <p>Kayaking</p>
+                <p>Coding</p>
+                <p>Video Games</p>
+                <p>Music</p>
+                <p>Mexican Food</p>
+                <p>Pizza</p>
+                <p>Coffee</p>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>
+                <h3 class="h3">Education</h3>
+              </legend>
+              <div class="center">
+                <p><strong>Webster Groves High School</strong></p>
+                <p>
+                  <strong>St. Louis Community College:</strong>&#160; AA,
+                  General Transfer Studies (Graduated 2021)
+                </p>
+                <p>
+                  <strong>Webster University:</strong>&#160; BS, Computer
+                  Science with an Emphasis in Cybersecurity & Minor in Data
+                  Analytics (Expected 2023)
+                </p>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>
+                <h3 class="h3">Adventures</h3>
+              </legend>
+
+              <div class="slideshow-container">
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 10</div>
+                  <img
+                    class="about-img"
+                    src="img/lake_house.jpeg"
+                    alt="Beautiful sunset by Pomme de Terre Lake"
+                  />
+                  <div class="text">
+                    Beautiful sunset by Pomme de Terre Lake
+                  </div>
+                </div>
+
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 10</div>
+                  <img
+                    class="about-img"
+                    src="img/kayaking.jpeg"
+                    alt="Kayaking with my dad"
+                  />
+                  <div class="text">Kayaking with my dad</div>
+                </div>
+
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 10</div>
+                  <img
+                    class="about-img"
+                    src="img/river.jpeg"
+                    alt="Camping by the Colorado River"
+                  />
+                  <div class="text">Camping by the Colorado River</div>
+                </div>
+
+                <div class="mySlides fade">
+                  <div class="numbertext">4 / 10</div>
+                  <img
+                    class="about-img"
+                    src="img/forest_park.jpeg"
+                    alt="Forest Park"
+                  />
+                  <div class="text">Forest Park</div>
+                </div>
+
+                <div class="mySlides fade">
+                  <div class="numbertext">5 / 10</div>
+                  <img
+                    class="about-img"
+                    src="img/camping.jpeg"
+                    alt="Camping by Arapaho Bay"
+                  />
+                  <div class="text">Camping by Arapaho Bay</div>
+                </div>
+
+                <div class="mySlides fade">
+                  <div class="numbertext">6 / 10</div>
+                  <img class="about-img" src="img/trail.jpeg" alt="Hiking" />
+                  <div class="text">Hiking</div>
+                </div>
+
+                <div class="mySlides fade">
+                  <div class="numbertext">7 / 10</div>
+                  <img
+                    class="about-img"
+                    src="img/sakura.jpeg"
+                    alt="My kitty, Sakura"
+                  />
+                  <div class="text">My kitty, Sakura</div>
+                </div>
+
+                <div class="mySlides fade">
+                  <div class="numbertext">8 / 10</div>
+                  <img
+                    class="about-img"
+                    src="img/delilah.jpeg"
+                    alt="My dog, Delilah"
+                  />
+                  <div class="text">My dog, Delilah</div>
+                </div>
+
+                <div class="mySlides fade">
+                  <div class="numbertext">9 / 10</div>
+                  <img
+                    class="about-img"
+                    src="img/backpacking.jpeg"
+                    alt="Backpacking"
+                  />
+                  <div class="text">Backpacking</div>
+                </div>
+
+                <div class="mySlides fade">
+                  <div class="numbertext">10 / 10</div>
+                  <img
+                    class="about-img"
+                    src="img/relax.jpeg"
+                    alt="Relaxing in Arapaho Bay"
+                  />
+                  <div class="text">Relaxing in Arapaho Bay</div>
+                </div>
+              </div>
+
+              <!-- Dots for navigation -->
+              <div class="dot-container"></div>
+            </fieldset>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <ul id="ul-social">
+          <li id="li-social">
+            <a
+              class="fa fa-facebook"
+              href="https://www.facebook.com/StarWars"
+              target="_blank"
+              title="facebook"
+            ></a>
+            <a
+              class="fa fa-instagram"
+              href="https://www.instagram.com/starwars/"
+              target="_blank"
+              title="instagram"
+            ></a>
+            <a
+              class="fa fa-twitter"
+              href="https://twitter.com/starwars"
+              target="_blank"
+              title="twitter"
+            ></a>
+            <a
+              class="fa fa-youtube"
+              href="https://www.youtube.com/user/starwars"
+              target="_blank"
+              title="youtube"
+            ></a>
+          </li>
+        </ul>
+        <div class="footer-space">
+          <p>© 2021 Nicholas Ragland</p>
+          <p><a class="footer-c" href="#top">Back To Top</a></p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/about-script.js"></script>
+    <script src="js/parallax.js"></script>
+  </body>
+</html>
