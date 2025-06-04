@@ -1,4 +1,5 @@
-# Simple workflow for deploying static content to GitHub Pages
+# .github/workflows/deploy.yml
+
 name: Deploy static content to Pages
 
 on:
@@ -21,7 +22,6 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  # Single deploy job since we're just deploying
   deploy:
     environment:
       name: github-pages
@@ -29,14 +29,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
-      - name: Setup Pages
-        uses: actions/configure-pages@v2
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/checkout@v4
+
+      - name: Setup GitHub Pages
+        uses: actions/configure-pages@v3
+
+      - name: Upload static content
+        uses: actions/upload-pages-artifact@v2
         with:
-          # Upload entire repository
           path: './src'
+
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v2
