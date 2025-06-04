@@ -3,20 +3,15 @@
 name: Deploy static content to Pages
 
 on:
-  # Runs on pushes targeting the default branch
   push:
     branches: ["main"]
-
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Allow one concurrent deployment
 concurrency:
   group: "pages"
   cancel-in-progress: true
@@ -28,16 +23,20 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout code
         uses: actions/checkout@v4
 
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v3
 
-      - name: Upload static content
+      # Explicitly include upload-artifact@v2 to avoid v3 download issue
+      - name: Patch upload-artifact dependency
+        uses: actions/upload-artifact@v2
+
+      - name: Upload static site
         uses: actions/upload-pages-artifact@v2
         with:
-          path: './src'
+          path: './src'  # Adjust if your output folder is different
 
       - name: Deploy to GitHub Pages
         id: deployment
