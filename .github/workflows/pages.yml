@@ -1,10 +1,10 @@
 # .github/workflows/deploy.yml
 
-name: Deploy via gh-pages branch
+name: Deploy static site to GitHub Pages
 
 on:
   push:
-    branches: ['main']
+    branches: ["main"]
   workflow_dispatch:
 
 jobs:
@@ -15,18 +15,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Set up Node.js (if using a build step)
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18
-
-      - name: Install dependencies and build
-        run: |
-          npm install
-          npm run build  # or use your actual build command
-
       - name: Deploy to gh-pages branch
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist  # replace with your output folder (e.g. ./build, ./src)
+          publish_dir: ./src  # <-- CHANGE THIS if your HTML files live elsewhere (e.g., ./ or ./public)
