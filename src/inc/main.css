@@ -185,7 +185,7 @@ p {
  * Title Backgrounds
  **************************/
 div.header-img {
-  background-image: url("images/home_background.jpeg");
+  background-image: url("../img/home_background.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
